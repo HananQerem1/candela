@@ -31,4 +31,44 @@
         font-family: var(--text-Inter);
         color:var(--color-primary);
     }
+    .container{
+        @apply mx-auto px-4 md:px-0;
+    }
+    img{
+        @apply w-full block;
+    }
+    a,button{
+        @apply cursor-pointer;
+    }
+}
+@layer utilities{
+    .row{
+        @apply flex justify-between items-center gap-8;
+    }
+    .link-hover{
+        @apply hover:text-fg font-medium hover:scale-110 transition-all duration-300;
+    }
+    .svg-hover{
+        position: relative;
+    }
+    .svg-hover::after{
+        content: "";
+        position: absolute;
+        top:-25%;
+        left:-25%;
+        width:30px;
+        height:30px;
+        border-radius:50%;
+        background-color: var(--color-fg-hover);
+        transform: scale(0);
+        transition: 300ms;
+        z-index: 0;
+    }
+    .svg-hover:hover::after{
+        transform: scale(1);
+    }
+    .svg-hover>*{
+        position: relative;
+        z-index: 1;
+    }
 }

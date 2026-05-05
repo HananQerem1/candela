@@ -11,9 +11,9 @@
     <title>Candela</title>
 </head>
 <body>
-    <header class="py-4">
+    <header class="py-4 position: fixed w-full bg-bg">
         <div class="container row">
-            <div class="logo">
+            <div class="logo max-md:w-20">
                 <a href="./index.html"><img src="./assets/img/icons/logo/logo.svg" alt="candela logo"/></a>
             </div>
             <nav class="links hidden md:block">
@@ -26,13 +26,44 @@
             </nav>
             <nav class="icons hidden md:block">
                 <ul class="row gap-4">
-                    <li class="svg-hover w-5"><a href="./wishlist.html"><img src="./assets/img/icons/ui-icons/heart-black.svg" alt="favarites icon"/></a></li>
-                    <li class="svg-hover"><a href="./cart.html"><img src="./assets/img/icons/ui-icons/cart.svg" alt="cart icon"/></a></li>
-                    <li class="svg-hover"><a href="./account.html"><img src="./assets/img/icons/ui-icons/user.svg" alt="user icon"/></a></li>
+                    <li class="icon-hover group w-5">
+                        <span class="icon-hover-bg"></span>
+                        <a class="icon-hover-content" href="./wishlist.html">
+                            <img src="./assets/img/icons/ui-icons/heart-black.svg" alt="favarites icon"/>
+                        </a>
+                    </li>
+                    <li class="icon-hover group w-5">
+                        <span class="icon-hover-bg"></span>
+                        <a class="icon-hover-content" href="./cart.html">
+                            <img src="./assets/img/icons/ui-icons/cart.svg" alt="cart icon"/>
+                        </a>
+                    </li>
+                    <li class="icon-hover group w-5">
+                        <span class="icon-hover-bg"></span>
+                        <a class="icon-hover-content" href="./account.html">
+                            <img src="./assets/img/icons/ui-icons/user.svg" alt="user icon"/>
+                        </a>
+                    </li>
                 </ul>
             </nav>
-            <button class="svg-hover w-5 md:hidden"><img src="./assets/img/icons/ui-icons/bars.svg" alt="bars icon" /></button>
+            <button class="icon-hover group w-5 md:hidden">
+                <span class="icon-hover-bg"></span>
+                <img class="icon-hover-content" src="./assets/img/icons/ui-icons/bars.svg" alt="bars icon" />
+            </button>
         </div>
     </header>
+    <main>
+        <section class="hero h-screen hero-bg center">
+            <div class="column gap-22.5">
+                <div>
+                    <h1>Candela Candles</h1>
+                </div>
+                <div class="column gap-5 text-center">
+                    <p>Made to celebrate your special moments, with warmth, calm, and delicate details.</p>
+                    <a class="button">Shop Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

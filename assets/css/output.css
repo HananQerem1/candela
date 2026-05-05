@@ -9,6 +9,7 @@
       "Courier New", monospace;
     --spacing: 0.25rem;
     --font-weight-medium: 500;
+    --font-weight-semibold: 600;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -20,6 +21,7 @@
     --color-fg-hover: #E8A5C280;
     --color-fg-secondary: #B08BBB;
     --color-fg-secondary-hover: #B08BBB80;
+    --gradient-button: linear-gradient(to right,var(--color-fg),var(--color-fg-secondary));
     --text-Inter: "Inter", sans-serif;
   }
 }
@@ -172,6 +174,9 @@
   }
 }
 @layer utilities {
+  .fixed {
+    position: fixed;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -193,8 +198,14 @@
   .hidden {
     display: none;
   }
+  .h-screen {
+    height: 100vh;
+  }
   .w-5 {
     width: calc(var(--spacing) * 5);
+  }
+  .w-full {
+    width: 100%;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -202,12 +213,29 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+  .gap-22\.5 {
+    gap: calc(var(--spacing) * 22.5);
+  }
+  .bg-bg {
+    background-color: var(--color-bg);
+  }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .text-center {
+    text-align: center;
   }
   .max-lg\:text-\[14\.5px\] {
     @media (width < 64rem) {
       font-size: 14.5px;
+    }
+  }
+  .max-md\:w-20 {
+    @media (width < 48rem) {
+      width: calc(var(--spacing) * 20);
     }
   }
   .md\:block {
@@ -241,6 +269,42 @@
   a,button {
     cursor: pointer;
   }
+  h1 {
+    text-align: center;
+    font-family: Cormorant;
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+    font-size: 45px;
+    @media (width >= 40rem) {
+      font-size: 55px;
+    }
+    @media (width >= 48rem) {
+      font-size: 65px;
+    }
+    @media (width >= 64rem) {
+      font-size: 75px;
+    }
+    @media (width >= 80rem) {
+      font-size: 85px;
+    }
+  }
+  p {
+    text-align: center;
+    font-family: Inter;
+    font-size: 13px;
+    @media (width < 40rem) {
+      padding-inline: calc(var(--spacing) * 5);
+    }
+    @media (width >= 40rem) {
+      font-size: 14px;
+    }
+    @media (width >= 48rem) {
+      font-size: 15px;
+    }
+    @media (width >= 64rem) {
+      font-size: 16px;
+    }
+  }
 }
 @layer utilities {
   .row {
@@ -249,6 +313,24 @@
     justify-content: space-between;
     gap: calc(var(--spacing) * 8);
   }
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-bg {
+    background-image: url('./../img/products/hero/white-candle.webp');
+    background-size: cover;
+    background-position: center;
+  }
+}
+@layer components {
   .link-hover {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -271,28 +353,72 @@
       }
     }
   }
-  .svg-hover {
+  .icon-hover {
     position: relative;
   }
-  .svg-hover::after {
-    content: "";
+  .icon-hover-bg {
     position: absolute;
     top: -25%;
     left: -25%;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: var(--color-fg-hover);
-    transform: scale(0);
-    transition: 300ms;
     z-index: 0;
+    height: 30px;
+    width: 30px;
+    --tw-scale-x: 0%;
+    --tw-scale-y: 0%;
+    --tw-scale-z: 0%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+    border-radius: calc(infinity * 1px);
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 100%;
+        --tw-scale-y: 100%;
+        --tw-scale-z: 100%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+    background-color: var(--color-fg-hover);
   }
-  .svg-hover:hover::after {
-    transform: scale(1);
-  }
-  .svg-hover>* {
+  .icon-hover-content {
     position: relative;
     z-index: 1;
+  }
+  .button {
+    background: var(--gradient-button);
+    border-radius: calc(infinity * 1px);
+    padding-block: calc(var(--spacing) * 3);
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    &:hover {
+      @media (hover: hover) {
+        opacity: 90%;
+      }
+    }
+    padding-inline: calc(var(--spacing) * 7.5);
+    font-size: 13px;
+    @media (width >= 40rem) {
+      font-size: 14px;
+    }
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 12.5);
+    }
+    @media (width >= 48rem) {
+      font-size: 15px;
+    }
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 20);
+    }
+    @media (width >= 64rem) {
+      font-size: 16px;
+    }
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 25);
+    }
   }
 }
 @property --tw-rotate-x {

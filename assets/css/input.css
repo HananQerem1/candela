@@ -23,6 +23,7 @@
 
     --text-Inter:"Inter", sans-serif;
     --text-Cormorant:"Cormorant", serif;
+
 }
 
 @layer base{
@@ -40,35 +41,47 @@
     a,button{
         @apply cursor-pointer;
     }
+    h1{
+        @apply font-[Cormorant] text-center font-semibold;
+        @apply text-[45px] sm:text-[55px] md:text-[65px] lg:text-[75px] xl:text-[85px];  
+    }
+    p{
+        @apply font-[Inter] text-center;
+        @apply text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] max-sm:px-5;
+    }
 }
 @layer utilities{
     .row{
         @apply flex justify-between items-center gap-8;
     }
+    .column{
+        @apply flex flex-col items-center justify-between;
+    }
+    .center{
+        @apply flex items-center justify-center;
+    }
+    .hero-bg{
+        @apply bg-[url('./../img/products/hero/white-candle.webp')] bg-cover bg-center;
+    }
+}
+@layer components{
     .link-hover{
         @apply hover:text-fg font-medium hover:scale-110 transition-all duration-300;
     }
-    .svg-hover{
-        position: relative;
+    .icon-hover{
+        @apply relative;
     }
-    .svg-hover::after{
-        content: "";
-        position: absolute;
-        top:-25%;
-        left:-25%;
-        width:30px;
-        height:30px;
-        border-radius:50%;
+    .icon-hover-bg{
+        @apply absolute top-[-25%] left-[-25%] w-[30px] h-[30px] rounded-full scale-0 transition duration-300 group-hover:scale-100 z-0;
         background-color: var(--color-fg-hover);
-        transform: scale(0);
-        transition: 300ms;
-        z-index: 0;
     }
-    .svg-hover:hover::after{
-        transform: scale(1);
+    .icon-hover-content{
+        @apply relative z-1;
     }
-    .svg-hover>*{
-        position: relative;
-        z-index: 1;
+    .button{
+        background: var(--gradient-button);
+        @apply rounded-full py-3 transition hover:opacity-90;
+        @apply px-7.5 md:px-12.5 lg:px-20 xl:px-25 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px];
     }
+   
 }

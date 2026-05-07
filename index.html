@@ -11,13 +11,13 @@
     <title>Candela</title>
 </head>
 <body>
-    <header class="py-4 position: fixed w-full bg-bg">
+    <header class="py-4 position: fixed w-full z-2 bg-bg">
         <div class="container row">
             <div class="logo max-md:w-20">
                 <a href="./index.html"><img src="./assets/img/icons/logo/logo.svg" alt="candela logo"/></a>
             </div>
             <nav class="links hidden md:block">
-                <ul class="row">
+                <ul class="row gap-8">
                     <li><a class="max-lg:text-[14.5px] link-hover" href="./index.html">Home</a></li>
                     <li><a class="max-lg:text-[14.5px] link-hover" href="./shop.html">Shop</a></li>
                     <li><a class="max-lg:text-[14.5px] link-hover" href="./packages.html">Packages</a></li>
@@ -58,14 +58,14 @@
                 <div>
                     <h1>candela candles</h1>
                 </div>
-                <div class="column gap-5">
+                <div class="column-center gap-5">
                     <p>Made to celebrate your special moments, with warmth, calm, and delicate details.</p>
                     <a class="button">shop now</a>
                 </div>
             </div>
         </section>
         <section class="collections container column-center gap-16">
-            <div class="column gap-4">
+            <div class="column-center gap-4">
                 <h2>shop by collection</h2>
                 <p>Explore our collection and discover the perfect items for you.</p>
             </div>
@@ -104,7 +104,20 @@
                 </div>
             </div>
         </section>
-        
+        <section class="packages bg-bg-secondary">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 lg:gap-8 xl:gap-10 px-11 md:px-18 lg:px-25 xl:px-35">
+                <div class="center">
+                    <div class="column-center gap-10">
+                        <h2>explore our packages</h2>
+                        <p>Find the perfect packages designed with love, match your mood, style, perfect for gifts and celebrations.</p>
+                        <button class="button max-sm:px-3 max-sm:py-2">view all packages</button>
+                </div>
+                </div>
+                <div class="hidden sm:flex items-center">
+                    <img src="./assets/img/products/packages/candle-package.webp" alt="candles pakadag image" class="rounded-xl" />
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>

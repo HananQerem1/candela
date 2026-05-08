@@ -27,19 +27,19 @@
             <nav class="icons hidden md:block">
                 <ul class="row gap-4">
                     <li class="icon-hover group w-5">
-                        <span class="icon-hover-bg"></span>
+                        <span class="icon-hover-bg-fg"></span>
                         <a class="icon-hover-content" href="./wishlist.html">
                             <img src="./assets/img/icons/ui-icons/heart-black.svg" alt="favarites icon"/>
                         </a>
                     </li>
                     <li class="icon-hover group w-5">
-                        <span class="icon-hover-bg"></span>
+                        <span class="icon-hover-bg-fg"></span>
                         <a class="icon-hover-content" href="./cart.html">
                             <img src="./assets/img/icons/ui-icons/cart.svg" alt="cart icon"/>
                         </a>
                     </li>
                     <li class="icon-hover group w-5">
-                        <span class="icon-hover-bg"></span>
+                        <span class="icon-hover-bg-fg"></span>
                         <a class="icon-hover-content" href="./account.html">
                             <img src="./assets/img/icons/ui-icons/user.svg" alt="user icon"/>
                         </a>
@@ -47,7 +47,7 @@
                 </ul>
             </nav>
             <button class="icon-hover group w-5 md:hidden">
-                <span class="icon-hover-bg"></span>
+                <span class="icon-hover-bg-fg"></span>
                 <img class="icon-hover-content" src="./assets/img/icons/ui-icons/bars.svg" alt="bars icon" />
             </button>
         </div>
@@ -64,38 +64,38 @@
                 </div>
             </div>
         </section>
-        <section class="collections container column-center gap-16">
+        <section class="collections container column-center gap-12">
             <div class="column-center gap-4">
                 <h2>shop by collection</h2>
                 <p>Explore our collection and discover the perfect items for you.</p>
             </div>
-            <div class="collections-grid w-full">
-                <div class="collections-card group">
-                    <div class="bg-[url('./../img/products/collections/scented.webp')] bg-cover-center collections-card-hover"></div>
+            <div class="cards-grid w-full">
+                <div class="card-img group">
+                    <div class="bg-[url('./../img/products/collections/scented.webp')] bg-cover-center card-img-hover"></div>
                     <div class="overlay"></div>
                     <div class="collection-card-content">
                         <h3 class="text-accent">scented</h3>
                         <p>Aromatic blends</p>
                     </div>
                 </div>
-                <div class="collections-card group">
-                    <div class="bg-[url('./../img/products/collections/decorative.webp')] bg-cover-center collections-card-hover"></div>
+                <div class="card-img group">
+                    <div class="bg-[url('./../img/products/collections/decorative.webp')] bg-cover-center card-img-hover"></div>
                     <div class="overlay"></div>
                     <div class="collection-card-content">
                         <h3 class="text-accent">decorative</h3>
                         <p>Elegant designs</p>
                     </div>
                 </div>
-                <div class="collections-card group">
-                    <div class="bg-[url('./../img/products/collections/luxury.webp')] bg-cover-center collections-card-hover"></div>
+                <div class="card-img group">
+                    <div class="bg-[url('./../img/products/collections/luxury.webp')] bg-cover-center card-img-hover"></div>
                     <div class="overlay"></div>
                     <div class="collection-card-content">
                         <h3 class="text-accent">luxury</h3>
                         <p>Premium collection</p>
                     </div>
                 </div>
-                <div class="collections-card group">
-                    <div class="bg-[url('./../img/products/collections/gift-sets.webp')] bg-cover-center collections-card-hover"></div>
+                <div class="card-img group">
+                    <div class="bg-[url('./../img/products/collections/gift-sets.webp')] bg-cover-center card-img-hover"></div>
                     <div class="overlay"></div>
                     <div class="collection-card-content">
                         <h3 class="text-accent">gift sets</h3>
@@ -117,6 +117,197 @@
                     <img src="./assets/img/products/packages/candle-package.webp" alt="candles pakadag image" class="rounded-xl" />
                 </div>
             </div>
+        </section>
+        <section class="best-selling container column-center gap-12">
+            <div class="column-center gap-4">
+                <h2>our best-selling candles</h2>
+                <p>The favorites everyone is loving right now</p>
+            </div>
+            <div class="hidden sm:grid cards-grid w-full">
+                <div class="relative group">
+                    <div class="card-img">
+                        <div class="bg-[url('./../img/products/items/scented/lavender-dreams.webp')] bg-cover-center card-img-hover"></div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="column gap-0.5 pt-4">
+                        <p class="item-p">scented</p>
+                        <h3 class="group-hover:text-fg">lavender dreams</h3>
+                        <span>$32.00</span>
+                    </div>
+                    <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                            <span class="icon-hover-bg-bg"></span>
+                            <a class="icon-hover-content">
+                            <img src="./assets/img/icons/ui-icons/heart-black.svg" alt="favarites icon"/>
+                            </a>
+                    </div>
+                    <div class=" hidden group-hover:block cart-icon-absolute">
+                            <span class="icon-hover-bg-fg"></span>
+                            <a class="icon-hover-content">
+                            <img src="./assets/img/icons/ui-icons/cart.svg" alt="cart icon"/>
+                            </a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="card-img">
+                        <div class="bg-[url('./../img/products/items/gift-sets/rose-garden.webp')] bg-cover-center card-img-hover"></div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="column gap-0.5 pt-4">
+                        <p class="item-p">gift sets</p>
+                        <h3 class="group-hover:text-fg">rose garden</h3>
+                        <span>$28.00</span>
+                    </div>
+                    <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                            <span class="icon-hover-bg-bg"></span>
+                            <a class="icon-hover-content">
+                            <img src="./assets/img/icons/ui-icons/heart-black.svg" alt="favarites icon"/>
+                            </a>
+                    </div>
+                    <div class=" hidden group-hover:block cart-icon-absolute">
+                            <span class="icon-hover-bg-fg"></span>
+                            <a class="icon-hover-content">
+                            <img src="./assets/img/icons/ui-icons/cart.svg" alt="cart icon"/>
+                            </a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="card-img">
+                        <div class="bg-[url('./../img/products/items/wax-melts/mint.webp')] bg-cover-center card-img-hover"></div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="column gap-0.5 pt-4">
+                        <p class="item-p">wax melts</p>
+                        <h3 class="group-hover:text-fg">mint</h3>
+                        <span>$38.00</span>
+                    </div>
+                    <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                            <span class="icon-hover-bg-bg"></span>
+                            <a class="icon-hover-content">
+                            <img src="./assets/img/icons/ui-icons/heart-black.svg" alt="favarites icon"/>
+                            </a>
+                    </div>
+                    <div class=" hidden group-hover:block cart-icon-absolute">
+                            <span class="icon-hover-bg-fg"></span>
+                            <a class="icon-hover-content">
+                            <img src="./assets/img/icons/ui-icons/cart.svg" alt="cart icon"/>
+                            </a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="card-img">
+                        <div class="bg-[url('./../img/products/items/decorative/iced-latte.webp')] bg-cover-center card-img-hover"></div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="column gap-0.5 pt-4">
+                        <p class="item-p">decorative</p>
+                        <h3 class="group-hover:text-fg">iced latte</h3>
+                        <span>$30.00</span>
+                    </div>
+                    <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                            <span class="icon-hover-bg-bg"></span>
+                            <a class="icon-hover-content">
+                            <img src="./assets/img/icons/ui-icons/heart-black.svg" alt="favarites icon"/>
+                            </a>
+                    </div>
+                    <div class=" hidden group-hover:block cart-icon-absolute">
+                            <span class="icon-hover-bg-fg"></span>
+                            <a class="icon-hover-content">
+                            <img src="./assets/img/icons/ui-icons/cart.svg" alt="cart icon"/>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-5 w-full sm:hidden">
+                <div class="group">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="card-img h-48 relative">
+                            <div class="bg-[url('./../img/products/items/scented/lavender-dreams.webp')] bg-cover-center card-img-hover"></div>
+                            <div class="overlay"></div>
+                            <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                                <span class="icon-hover-bg-bg"></span>
+                                <a class="icon-hover-content">
+                                <img src="./assets/img/icons/ui-icons/heart-black.svg" alt="favarites icon"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column justify-between py-2">
+                            <div class="column w-full">
+                                <p class="item-p">scented</p>
+                                <h3 class="group-hover:text-fg">lavender dreams</h3>
+                                <span>$32.00</span>
+                            </div>
+                            <button class="button w-full py-1.5">add to cart</button>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="card-img h-48 relative">
+                            <div class="bg-[url('./../img/products/items/gift-sets/rose-garden.webp')] bg-cover-center card-img-hover"></div>
+                                <div class="overlay"></div>
+                                <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                                    <span class="icon-hover-bg-bg"></span>
+                                    <a class="icon-hover-content">
+                                    <img src="./assets/img/icons/ui-icons/heart-black.svg" alt="favarites icon"/>
+                                    </a>
+                            </div>
+                        </div>
+                        <div class="column justify-between py-2">
+                            <div class="column w-full">
+                                <p class="item-p">gift sets</p>
+                                <h3 class="group-hover:text-fg">rose garden</h3>
+                                <span>$28.00</span>
+                            </div>
+                            <button class="button w-full py-1.5">add to cart</button>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="card-img h-48 relative">
+                            <div class="bg-[url('./../img/products/items/wax-melts/mint.webp')] bg-cover-center card-img-hover"></div>
+                            <div class="overlay"></div>
+                            <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                                <span class="icon-hover-bg-bg"></span>
+                                <a class="icon-hover-content">
+                                <img src="./assets/img/icons/ui-icons/heart-black.svg" alt="favarites icon"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column justify-between py-2">
+                            <div class="column w-full">
+                                <p class="item-p">wax melts</p>
+                                <h3 class="group-hover:text-fg">mint</h3>
+                                <span>$38.00</span>
+                            </div>
+                            <button class="button w-full py-1.5">add to cart</button>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="card-img h-48 relative">
+                        <div class="bg-[url('./../img/products/items/decorative/iced-latte.webp')] bg-cover-center card-img-hover"></div>
+                            <div class="overlay"></div>
+                            <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                                <span class="icon-hover-bg-bg"></span>
+                                <a class="icon-hover-content">
+                                <img src="./assets/img/icons/ui-icons/heart-black.svg" alt="favarites icon"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column justify-between py-2">
+                            <div class="column w-full">
+                                <p class="item-p">decorative</p>
+                                <h3 class="group-hover:text-fg">iced latte</h3>
+                                <span>$30.00</span>
+                            </div>
+                            <button class="button w-full py-1.5">add to cart</button>                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="button max-sm:w-[80%]">shop best sellers</button>
         </section>
     </main>
 </body>

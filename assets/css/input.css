@@ -56,10 +56,13 @@
     }
     p{
         @apply font-[Inter] text-secondary;
-        @apply text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] max-sm:px-5;
+        @apply text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px];
     }
     section{
         @apply py-10 md:py-18;
+    }
+    span{
+        @apply text-[13px];
     }
 }
 @layer utilities{
@@ -78,11 +81,14 @@
     .bg-cover-center{
         @apply bg-cover bg-center;
     }
-    .collections-grid{
-        @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4;
-    }
     .collection-card-content{
         @apply absolute left-3 bottom-0; 
+    }
+    .favarite-icon-absolute{
+        @apply absolute top-3 right-3;
+    }
+    .cart-icon-absolute{
+        @apply absolute bottom-3 right-3;
     }
 
 }
@@ -93,9 +99,9 @@
     .icon-hover{
         @apply relative;
     }
-    .icon-hover-bg{
+    .icon-hover-bg-fg{
         @apply absolute top-[-25%] left-[-25%] w-7.5 h-7.5 rounded-full scale-0 transition duration-300 group-hover:scale-100 z-0;
-        background-color: var(--color-fg-hover);
+        background-color: var(--color-fg);
     }
     .icon-hover-content{
         @apply relative z-1;
@@ -105,17 +111,26 @@
         @apply rounded-full py-3 transition hover:opacity-90;
         @apply px-7.5 md:px-12.5 lg:px-20 xl:px-25 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px];
     }
-    .collections-card{
+    .cards-grid{
+        @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4;
+    }
+    .card-img{
         @apply relative rounded-xl h-65 overflow-hidden cursor-pointer;
     }
-    .collections-card-hover{
-        @apply transition duration-500 group-hover:scale-110 absolute inset-0;
+    .card-img-hover{
+        @apply absolute inset-0 transition duration-500 group-hover:scale-110;
     }
     .overlay{
         @apply absolute inset-0 bg-black/20;
     }
     .collection-card-content p{
-        @apply text-accent px-0 text-[10px] sm:text-[11px] md:text-[12px];
+        @apply text-accent text-[10px] sm:text-[11px] md:text-[12px];
     }
-   
+    .icon-hover-bg-bg{
+        @apply absolute top-[-25%] left-[-25%] w-7.5 h-7.5 rounded-full scale-0 transition duration-300 group-hover:scale-100 z-0;
+        background-color: var(--color-bg);
+    }
+    .item-p{
+        @apply uppercase text-[11px] sm:text-[11px] md:text-[12px];
+    }
 }

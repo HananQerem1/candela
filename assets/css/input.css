@@ -39,7 +39,7 @@
         @apply w-full block;
     }
     a,button{
-        @apply cursor-pointer capitalize;
+        @apply cursor-pointer capitalize inline-block;
     }
     h1{
         @apply font-[Cormorant] capitalize font-semibold;
@@ -81,16 +81,9 @@
     .bg-cover-center{
         @apply bg-cover bg-center;
     }
-    .collection-card-content{
-        @apply absolute left-3 bottom-3; 
+    .grid-responsive-4{
+        @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ;
     }
-    .favarite-icon-absolute{
-        @apply absolute top-3 right-3;
-    }
-    .cart-icon-absolute{
-        @apply absolute bottom-3 right-3;
-    }
-
 }
 @layer components{
     .link-hover{
@@ -111,9 +104,6 @@
         @apply rounded-full py-3 transition hover:opacity-90;
         @apply px-7.5 md:px-12.5 lg:px-20 xl:px-25 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px];
     }
-    .cards-grid{
-        @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4;
-    }
     .card-img{
         @apply relative rounded-xl h-65 overflow-hidden cursor-pointer;
     }
@@ -123,8 +113,17 @@
     .overlay{
         @apply absolute inset-0 bg-black/20;
     }
-    .collection-card-content p{
+    .collection-card-content{
+        @apply absolute left-3 bottom-3; 
+    }
+    .collection-card-desc{
         @apply text-accent text-[10px] sm:text-[11px] md:text-[12px];
+    }
+    .favarite-icon-absolute{
+        @apply absolute top-3 right-3;
+    }
+    .cart-icon-absolute{
+        @apply absolute bottom-3 right-3;
     }
     .icon-hover-bg-bg{
         @apply absolute top-[-25%] left-[-25%] w-7.5 h-7.5 rounded-full scale-0 transition duration-300 group-hover:scale-100 z-0;
@@ -139,5 +138,9 @@
     .user-avatar-bg{
         @apply w-10 h-10 rounded-full text-bg;
         background: var(--gradient-button);
+    }
+    .footer-link{
+        @apply text-secondary ;
+        @apply text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px];
     }
 }

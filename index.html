@@ -18,10 +18,10 @@
             </div>
             <nav class="links hidden md:block">
                 <ul class="row gap-8">
-                    <li><a class="max-lg:text-[14.5px] link-hover" href="./index.html">Home</a></li>
-                    <li><a class="max-lg:text-[14.5px] link-hover" href="./shop.html">Shop</a></li>
-                    <li><a class="max-lg:text-[14.5px] link-hover" href="./packages.html">Packages</a></li>
-                    <li><a class="max-lg:text-[14.5px] link-hover" href="./contact.html">Contact</a></li>
+                    <li><a class="max-lg:text-[14.5px] link-hover" href="./index.html">home</a></li>
+                    <li><a class="max-lg:text-[14.5px] link-hover" href="./shop.html">shop</a></li>
+                    <li><a class="max-lg:text-[14.5px] link-hover" href="./packages.html">packages</a></li>
+                    <li><a class="max-lg:text-[14.5px] link-hover" href="./contact.html">contact</a></li>
                 </ul>
             </nav>
             <nav class="icons hidden md:block">
@@ -69,13 +69,13 @@
                 <h2>shop by collection</h2>
                 <p>Explore our collection and discover the perfect items for you.</p>
             </div>
-            <div class="cards-grid w-full">
+            <div class="grid-responsive-4 gap-4 w-full">
                 <div class="card-img group">
                     <div class="bg-[url('./../img/products/collections/scented.webp')] bg-cover-center card-img-hover"></div>
                     <div class="overlay"></div>
                     <div class="collection-card-content">
                         <h3 class="text-accent">scented</h3>
-                        <p>Aromatic blends</p>
+                        <p class="collection-card-desc">Aromatic blends</p>
                     </div>
                 </div>
                 <div class="card-img group">
@@ -83,7 +83,7 @@
                     <div class="overlay"></div>
                     <div class="collection-card-content">
                         <h3 class="text-accent">decorative</h3>
-                        <p>Elegant designs</p>
+                        <p class="collection-card-desc">Elegant designs</p>
                     </div>
                 </div>
                 <div class="card-img group">
@@ -91,7 +91,7 @@
                     <div class="overlay"></div>
                     <div class="collection-card-content">
                         <h3 class="text-accent">luxury</h3>
-                        <p>Premium collection</p>
+                        <p class="collection-card-desc">Premium collection</p>
                     </div>
                 </div>
                 <div class="card-img group">
@@ -99,7 +99,7 @@
                     <div class="overlay"></div>
                     <div class="collection-card-content">
                         <h3 class="text-accent">gift sets</h3>
-                        <p>Curated bundles</p>
+                        <p class="collection-card-desc">Curated bundles</p>
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@
                 <h2>our best-selling candles</h2>
                 <p>The favorites everyone is loving right now</p>
             </div>
-            <div class="hidden sm:grid cards-grid gap-4 w-full">
+            <div class="hidden sm:grid grid-responsive-4 gap-4 w-full">
                 <div class="relative group">
                     <div class="card-img">
                         <div class="bg-[url('./../img/products/items/scented/lavender-dreams.webp')] bg-cover-center card-img-hover"></div>
@@ -315,7 +315,7 @@
                     <h2>what our customers say</h2>
                     <p>Complete your purchase and share your experience with Candela, your opinion means a lot to us.</p>
                 </div>
-                <div class="cards-grid gap-4 w-full">
+                <div class="grid-responsive-4 gap-4 w-full">
                     <div class="bg-bg-card column justify-between gap-4">
                         <div class="row gap-1">
                             <img src="./assets/img/icons/ui-icons/star-fill.svg" alt="yellow star icon"/>
@@ -401,5 +401,71 @@
             </div>
         </section>
     </main>
+    <footer class="bg-bg-secondary py-10 md:py-18">
+        <div class="column-center gap-15">
+            <div class="container grid-responsive-4 gap-10 lg:gap-4 border-b border-fg pb-8">
+                <div class="column gap-4">
+                    <a href="./index.html"><img src="./assets/img/icons/logo/logo.svg" alt="candela logo"/></a>
+                    <p class="text-start">Handcrafted candles that bring warmth and elegance to your space.</p>
+                </div>
+                <div class="column gap-4">
+                    <h3>quick links</h3>
+                    <ul class="column footer-link">
+                        <li><a class="link-hover" href="./index.html">home</a></li>
+                        <li><a class= "link-hover" href="./shop.html">shop</a></li>
+                        <li><a class="link-hover" href="./packages.html">packages</a></li>
+                        <li><a class="link-hover" href="./contact.html">contact</a></li>
+                    </ul>
+                </div>
+                <div class="column gap-4">
+                    <h3>contact</h3>
+                    <ul class="column footer-link">
+                        <li><a class="link-hover group/address" href="">
+                                <div class="row gap-1">
+                                    <img src="./assets/img/icons/ui-icons/location-dot.svg" alt="loction icon" class="size-4 group-hover/address:hidden"/>
+                                    <img src="./assets/img/icons/ui-icons/location-dot-hover.svg" alt="loction icon" class="size-4 hidden group-hover/address:block"/>
+                                    Ein Misbah, Ramallah, Palestine
+                                </div>
+                            </a>
+                        </li>
+                        <li><a class="link-hover group/phone" href="">
+                                <div class="row gap-1">
+                                    <img src="./assets/img/icons/ui-icons/phone.svg" alt="phone icon" class="size-4 group-hover/phone:hidden"/>
+                                    <img src="./assets/img/icons/ui-icons/phone-hover.svg" alt="phone icon" class="size-4 hidden group-hover/phone:block"/>
+                                    +970 59 123 4567
+                                </div>
+                            </a>
+                        </li>
+                        <li><a class="link-hover group/email" href="">
+                                <div class="row gap-1">
+                                    <img src="./assets/img/icons/ui-icons/email.svg" alt="email icon" class="size-4 group-hover/email:hidden"/>
+                                    <img src="./assets/img/icons/ui-icons/email-hover.svg" alt="email icon" class="size-4 hidden group-hover/email:block"/>
+                                    candela@gmail.com
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column gap-4">
+                    <h3>follow us</h3>
+                    <ul class="row gap-3">
+                        <li><a class="icon-hover group inline-block w-5" href="">
+                            <span class="icon-hover-bg-fg"></span>
+                                <img src="./assets/img/icons/ui-icons/instagram.svg" alt="instagram app icon" class="icon-hover-content"/>
+                            </a>
+                        </li>
+                        <li><a class="icon-hover group inline-block w-5" href="">
+                            <span class="icon-hover-bg-fg"></span>
+                            <img src="./assets/img/icons/ui-icons/facebook.svg" alt="facebook app icon" class="icon-hover-content"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p>© 2026 Candela. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

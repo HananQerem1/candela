@@ -12,6 +12,7 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -253,6 +254,12 @@
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
   }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -331,6 +338,12 @@
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-\[12px\] {
+    font-size: 12px;
   }
   .text-accent {
     color: var(--color-accent);
@@ -540,6 +553,7 @@
   }
   span {
     font-size: 13px;
+    text-transform: capitalize;
   }
 }
 @layer utilities {
@@ -763,6 +777,18 @@
     @media (width >= 48rem) {
       font-size: 12px;
     }
+  }
+  .bg-bg-card {
+    border-radius: var(--radius-2xl);
+    background-color: var(--color-bg);
+    padding: calc(var(--spacing) * 3);
+  }
+  .user-avatar-bg {
+    height: calc(var(--spacing) * 10);
+    width: calc(var(--spacing) * 10);
+    border-radius: calc(infinity * 1px);
+    color: var(--color-bg);
+    background: var(--gradient-button);
   }
 }
 @property --tw-rotate-x {

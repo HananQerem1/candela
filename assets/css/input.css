@@ -62,7 +62,7 @@
         @apply py-10 md:py-18;
     }
     span{
-        @apply text-[13px];
+        @apply text-[13px] capitalize;
     }
 }
 @layer utilities{
@@ -132,5 +132,12 @@
     }
     .item-p{
         @apply uppercase text-[11px] sm:text-[11px] md:text-[12px];
+    }
+    .bg-bg-card{
+        @apply bg-bg rounded-2xl p-3;
+    }
+    .user-avatar-bg{
+        @apply w-10 h-10 rounded-full text-bg;
+        background: var(--gradient-button);
     }
 }

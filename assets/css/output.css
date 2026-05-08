@@ -212,9 +212,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .h-48 {
     height: calc(var(--spacing) * 48);
   }
@@ -224,17 +221,20 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
+  .w-7 {
+    width: calc(var(--spacing) * 7);
+  }
+  .w-\[75\%\] {
+    width: 75%;
+  }
   .w-full {
     width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .grow {
+    flex-grow: 1;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -247,9 +247,6 @@
   }
   .justify-between {
     justify-content: space-between;
-  }
-  .gap-0 {
-    gap: calc(var(--spacing) * 0);
   }
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
@@ -266,6 +263,9 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
@@ -275,18 +275,11 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
-  .gap-22 {
-    gap: calc(var(--spacing) * 22);
-  }
   .gap-22\.5 {
     gap: calc(var(--spacing) * 22.5);
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .bg-bg {
     background-color: var(--color-bg);
@@ -324,9 +317,6 @@
   .px-11 {
     padding-inline: calc(var(--spacing) * 11);
   }
-  .py-1 {
-    padding-block: calc(var(--spacing) * 1);
-  }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
   }
@@ -347,13 +337,6 @@
   }
   .text-accent {
     color: var(--color-accent);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .group-hover\:block {
     &:is(:where(.group):hover *) {
@@ -394,6 +377,11 @@
       padding-block: calc(var(--spacing) * 2);
     }
   }
+  .sm\:block {
+    @media (width >= 40rem) {
+      display: block;
+    }
+  }
   .sm\:flex {
     @media (width >= 40rem) {
       display: flex;
@@ -424,6 +412,11 @@
       display: none;
     }
   }
+  .md\:w-9 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 9);
+    }
+  }
   .md\:gap-6 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 6);
@@ -434,6 +427,11 @@
       padding-inline: calc(var(--spacing) * 18);
     }
   }
+  .lg\:w-11 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 11);
+    }
+  }
   .lg\:gap-8 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 8);
@@ -442,6 +440,11 @@
   .lg\:px-25 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 25);
+    }
+  }
+  .xl\:w-13 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 13);
     }
   }
   .xl\:gap-10 {
@@ -584,7 +587,7 @@
   }
   .collection-card-content {
     position: absolute;
-    bottom: calc(var(--spacing) * 0);
+    bottom: calc(var(--spacing) * 3);
     left: calc(var(--spacing) * 3);
   }
   .favarite-icon-absolute {
@@ -811,16 +814,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -852,8 +845,6 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
-      --tw-border-style: solid;
-      --tw-outline-style: solid;
       --tw-font-weight: initial;
       --tw-duration: initial;
       --tw-scale-x: 1;

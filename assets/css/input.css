@@ -82,7 +82,7 @@
         @apply bg-cover bg-center;
     }
     .collection-card-content{
-        @apply absolute left-3 bottom-0; 
+        @apply absolute left-3 bottom-3; 
     }
     .favarite-icon-absolute{
         @apply absolute top-3 right-3;

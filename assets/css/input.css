@@ -66,8 +66,11 @@
     }
 }
 @layer utilities{
-    .row{
+    .row-between{
         @apply flex justify-between items-center;
+    }
+    .row-start{
+        @apply flex justify-start items-center;
     }
     .column{
         @apply flex flex-col items-start;
@@ -99,7 +102,7 @@
     .icon-hover-content{
         @apply relative z-1;
     }
-    .button{
+    .button-primary{
         background: var(--gradient-button);
         @apply rounded-full py-3 transition hover:opacity-90;
         @apply px-7.5 md:px-12.5 lg:px-20 xl:px-25 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px];
@@ -142,5 +145,15 @@
     .footer-link{
         @apply text-secondary ;
         @apply text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px];
+    }
+    .button-secondary{
+        @apply bg-fg rounded-2xl py-1 transition hover:opacity-90;
+    }
+    .search-input-bar{
+        @apply bg-bg-secondary rounded-2xl border border-fg-hover p-1 focus-within:border-fg;
+    }
+    .badge{
+        @apply absolute top-3 right-3 w-fit h-5.5 px-3 rounded-2xl z-0;
+        background-color: var(--color-fg);
     }
 }

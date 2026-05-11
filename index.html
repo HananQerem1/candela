@@ -29,19 +29,22 @@
                     <li class="icon-hover group w-5">
                         <span class="icon-hover-bg-fg"></span>
                         <a class="icon-hover-content" href="./wishlist.html">
-                            <img src="./assets/img/icons/ui-icons/heart-black.svg" alt="favarites icon"/>
+                            <img src="./assets/img/icons/ui-icons/heart-black.svg" alt="favarites icon" class="group-hover:hidden"/>
+                            <img src="./assets/img/icons/ui-icons/heart-white.svg" alt="favarites icon" class="hidden group-hover:block"/>
                         </a>
                     </li>
                     <li class="icon-hover group w-5">
                         <span class="icon-hover-bg-fg"></span>
                         <a class="icon-hover-content" href="./cart.html">
-                            <img src="./assets/img/icons/ui-icons/cart.svg" alt="cart icon"/>
+                            <img src="./assets/img/icons/ui-icons/cart-black.svg" alt="cart icon" class="group-hover:hidden"/>
+                            <img src="./assets/img/icons/ui-icons/cart-white.svg" alt="cart icon" class="hidden group-hover:block"/>
                         </a>
                     </li>
                     <li class="icon-hover group w-5">
                         <span class="icon-hover-bg-fg"></span>
                         <a class="icon-hover-content" href="./account.html">
-                            <img src="./assets/img/icons/ui-icons/user.svg" alt="user icon"/>
+                            <img src="./assets/img/icons/ui-icons/user-black.svg" alt="user icon" class="group-hover:hidden"/>
+                            <img src="./assets/img/icons/ui-icons/user-white.svg" alt="user icon" class="hidden group-hover:block"/>
                         </a>
                     </li>
                 </ul>
@@ -69,7 +72,7 @@
                 <h2>shop by collection</h2>
                 <p>Explore our collection and discover the perfect items for you.</p>
             </div>
-            <div class="grid-responsive-4 gap-4 w-full">
+            <div class="grid-responsive-4">
                 <div class="card-img group">
                     <div class="bg-[url('./../img/products/collections/scented.webp')] bg-cover-center card-img-hover"></div>
                     <div class="overlay"></div>
@@ -123,7 +126,7 @@
                 <h2>our best-selling candles</h2>
                 <p>The favorites everyone is loving right now</p>
             </div>
-            <div class="hidden sm:grid grid-responsive-4 gap-4 w-full">
+            <div class="hidden xs:grid grid-cols-2 lg:grid-cols-4 gap-4 w-full">
                 <div class="relative group">
                     <div class="card-img">
                         <div class="bg-[url('./../img/products/items/scented/lavender-dreams.webp')] bg-cover-center card-img-hover"></div>
@@ -143,7 +146,7 @@
                     <div class=" hidden group-hover:block cart-icon-absolute">
                             <span class="icon-hover-bg-fg"></span>
                             <a class="icon-hover-content">
-                            <img src="./assets/img/icons/ui-icons/cart.svg" alt="cart icon"/>
+                            <img src="./assets/img/icons/ui-icons/cart-black.svg" alt="cart icon"/>
                             </a>
                     </div>
                 </div>
@@ -166,7 +169,7 @@
                     <div class=" hidden group-hover:block cart-icon-absolute">
                             <span class="icon-hover-bg-fg"></span>
                             <a class="icon-hover-content">
-                            <img src="./assets/img/icons/ui-icons/cart.svg" alt="cart icon"/>
+                            <img src="./assets/img/icons/ui-icons/cart-black.svg" alt="cart icon"/>
                             </a>
                     </div>
                 </div>
@@ -189,7 +192,7 @@
                     <div class=" hidden group-hover:block cart-icon-absolute">
                             <span class="icon-hover-bg-fg"></span>
                             <a class="icon-hover-content">
-                            <img src="./assets/img/icons/ui-icons/cart.svg" alt="cart icon"/>
+                            <img src="./assets/img/icons/ui-icons/cart-black.svg" alt="cart icon"/>
                             </a>
                     </div>
                 </div>
@@ -212,12 +215,12 @@
                     <div class=" hidden group-hover:block cart-icon-absolute">
                             <span class="icon-hover-bg-fg"></span>
                             <a class="icon-hover-content">
-                            <img src="./assets/img/icons/ui-icons/cart.svg" alt="cart icon"/>
+                            <img src="./assets/img/icons/ui-icons/cart-black.svg" alt="cart icon"/>
                             </a>
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 gap-4 w-full sm:hidden">
+            <div class="grid grid-cols-1 gap-4 w-full xs:hidden">
                 <div class="group">
                     <div class="grid grid-cols-2 gap-4">
                         <div class="card-img h-48 relative">
@@ -236,7 +239,7 @@
                                 <h3 class="group-hover:text-fg">lavender dreams</h3>
                                 <span>$32.00</span>
                             </div>
-                            <button class="button w-full py-1.5">add to cart</button>                       
+                            <button class="button-primary w-full py-1.5">add to cart</button>                       
                         </div>
                     </div>
                 </div>
@@ -258,7 +261,7 @@
                                 <h3 class="group-hover:text-fg">rose garden</h3>
                                 <span>$28.00</span>
                             </div>
-                            <button class="button w-full py-1.5">add to cart</button>                       
+                            <button class="button-primary w-full py-1.5">add to cart</button>                       
                         </div>
                     </div>
                 </div>
@@ -280,7 +283,7 @@
                                 <h3 class="group-hover:text-fg">mint</h3>
                                 <span>$38.00</span>
                             </div>
-                            <button class="button w-full py-1.5">add to cart</button>                       
+                            <button class="button-primary w-full py-1.5">add to cart</button>                       
                         </div>
                     </div>
                 </div>
@@ -302,7 +305,7 @@
                                 <h3 class="group-hover:text-fg">iced latte</h3>
                                 <span>$30.00</span>
                             </div>
-                            <button class="button w-full py-1.5">add to cart</button>                       
+                            <button class="button-primary w-full py-1.5">add to cart</button>                       
                         </div>
                     </div>
                 </div>
@@ -315,7 +318,7 @@
                     <h2>what our customers say</h2>
                     <p>Complete your purchase and share your experience with Candela, your opinion means a lot to us.</p>
                 </div>
-                <div class="grid-responsive-4 gap-4 w-full">
+                <div class="grid-responsive-4">
                     <div class="bg-bg-card column justify-between gap-4">
                         <div class="row-between gap-1">
                             <img src="./assets/img/icons/ui-icons/star-fill.svg" alt="yellow star icon"/>
@@ -395,7 +398,7 @@
             <div class="container column-center gap-6 w-[75%]">
                 <img src="./assets/img/icons/ui-icons/heart-pink.svg" alt="heart icon" class="w-7 md:w-9 lg:w-11 xl:w-13"/>
                 <h2>get in touch</h2>
-                <p class="hidden sm:block">At Candela, we create high-quality candles to complement your special moments and joyful occasions.We value building a strong connection with our customers and always strive to ensure your satisfaction.<br>Your suggestions and inquiries are always welcome as we continue to grow and improve.For any inquiries, please feel free to contact us.</p>
+                <p class="hidden sm:block">Candela creates high-quality candles for special moments while focusing on customer satisfaction. We value your feedback and welcome any inquiries or suggestions.</p>
                 <p class="sm:hidden">Have questions about our candles? We'd love to hear from you.</p>
                 <button class="button-primary">contact us</button>
             </div>
@@ -403,8 +406,8 @@
     </main>
     <footer class="bg-bg-secondary py-10 md:py-18">
         <div class="column-center gap-15">
-            <div class="container grid-responsive-4 gap-10 lg:gap-4 border-b border-fg pb-8">
-                <div class="column gap-4">
+            <div class="container grid-responsive-4 border-b border-fg pb-8">
+                <div class="column gap-4 w-[70%]">
                     <a href="#"><img src="./assets/img/icons/logo/logo.svg" alt="candela logo"/></a>
                     <p class="text-start">Handcrafted candles that bring warmth and elegance to your space.</p>
                 </div>
@@ -450,13 +453,17 @@
                     <h3>follow us</h3>
                     <ul class="row-between gap-3">
                         <li><a class="icon-hover group inline-block w-5" href="">
+                            <span class="icon-bg-bg"></span>
                             <span class="icon-hover-bg-fg"></span>
-                                <img src="./assets/img/icons/ui-icons/instagram.svg" alt="instagram app icon" class="icon-hover-content"/>
+                                <img src="./assets/img/icons/ui-icons/instagram.svg" alt="instagram app icon" class="icon-hover-content group-hover:hidden"/>
+                                <img src="./assets/img/icons/ui-icons/instagram-white.svg" alt="instagram app icon" class="icon-hover-content hidden group-hover:block"/>
                             </a>
                         </li>
                         <li><a class="icon-hover group inline-block w-5" href="">
+                            <span class="icon-bg-bg"></span>
                             <span class="icon-hover-bg-fg"></span>
-                            <img src="./assets/img/icons/ui-icons/facebook.svg" alt="facebook app icon" class="icon-hover-content"/>
+                            <img src="./assets/img/icons/ui-icons/facebook.svg" alt="facebook app icon" class="icon-hover-content group-hover:hidden"/>
+                            <img src="./assets/img/icons/ui-icons/facebook-white.svg" alt="facebook app icon" class="icon-hover-content hidden group-hover:block"/>
                             </a>
                         </li>
                     </ul>

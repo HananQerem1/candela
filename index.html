@@ -72,7 +72,7 @@
                 <h2>shop by collection</h2>
                 <p>Explore our collection and discover the perfect items for you.</p>
             </div>
-            <div class="grid-responsive-4">
+            <div class="grid-responsive-4 gap-y-4">
                 <div class="card-img group">
                     <div class="bg-[url('./../img/products/collections/scented.webp')] bg-cover-center card-img-hover"></div>
                     <div class="overlay"></div>
@@ -126,7 +126,7 @@
                 <h2>our best-selling candles</h2>
                 <p>The favorites everyone is loving right now</p>
             </div>
-            <div class="hidden xs:grid grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+            <div class="hidden xs:grid grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-4 w-full">
                 <div class="relative group">
                     <div class="card-img">
                         <div class="bg-[url('./../img/products/items/scented/lavender-dreams.webp')] bg-cover-center card-img-hover"></div>
@@ -220,7 +220,7 @@
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 gap-4 w-full xs:hidden">
+            <div class="grid grid-cols-1 gap-y-4 w-full xs:hidden">
                 <div class="group">
                     <div class="grid grid-cols-2 gap-4">
                         <div class="card-img h-48 relative">
@@ -318,7 +318,7 @@
                     <h2>what our customers say</h2>
                     <p>Complete your purchase and share your experience with Candela, your opinion means a lot to us.</p>
                 </div>
-                <div class="grid-responsive-4">
+                <div class="grid-responsive-4 gap-y-4">
                     <div class="bg-bg-card column justify-between gap-4">
                         <div class="row-between gap-1">
                             <img src="./assets/img/icons/ui-icons/star-fill.svg" alt="yellow star icon"/>
@@ -405,74 +405,126 @@
         </section>
     </main>
     <footer class="bg-bg-secondary py-10 md:py-18">
-        <div class="column-center gap-15">
-            <div class="container grid-responsive-4 border-b border-fg pb-8">
-                <div class="column gap-4 w-[70%]">
-                    <a href="#"><img src="./assets/img/icons/logo/logo.svg" alt="candela logo"/></a>
-                    <p class="text-start">Handcrafted candles that bring warmth and elegance to your space.</p>
-                </div>
-                <div class="column gap-4">
-                    <h3>quick links</h3>
-                    <ul class="column footer-link">
-                        <li><a class="link-hover" href="./index.html">home</a></li>
-                        <li><a class= "link-hover" href="./shop.html">shop</a></li>
-                        <li><a class="link-hover" href="./packages.html">packages</a></li>
-                        <li><a class="link-hover" href="./contact.html">contact</a></li>
-                    </ul>
-                </div>
-                <div class="column gap-4">
-                    <h3>contact</h3>
-                    <ul class="column footer-link">
-                        <li><a class="link-hover group/address" href="">
-                                <div class="row-between gap-1">
-                                    <img src="./assets/img/icons/ui-icons/location-dot.svg" alt="loction icon" class="size-4 group-hover/address:hidden"/>
-                                    <img src="./assets/img/icons/ui-icons/location-dot-hover.svg" alt="loction icon" class="size-4 hidden group-hover/address:block"/>
-                                    Ein Misbah, Ramallah, Palestine
-                                </div>
-                            </a>
-                        </li>
-                        <li><a class="link-hover group/phone" href="">
-                                <div class="row-between gap-1">
-                                    <img src="./assets/img/icons/ui-icons/phone.svg" alt="phone icon" class="size-4 group-hover/phone:hidden"/>
-                                    <img src="./assets/img/icons/ui-icons/phone-hover.svg" alt="phone icon" class="size-4 hidden group-hover/phone:block"/>
-                                    +970 59 123 4567
-                                </div>
-                            </a>
-                        </li>
-                        <li><a class="link-hover group/email" href="">
-                                <div class="row-between gap-1">
-                                    <img src="./assets/img/icons/ui-icons/email.svg" alt="email icon" class="size-4 group-hover/email:hidden"/>
-                                    <img src="./assets/img/icons/ui-icons/email-hover.svg" alt="email icon" class="size-4 hidden group-hover/email:block"/>
-                                    candela@gmail.com
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column gap-4">
-                    <h3>follow us</h3>
-                    <ul class="row-between gap-3">
-                        <li><a class="icon-hover group inline-block w-5" href="">
-                            <span class="icon-bg-bg"></span>
-                            <span class="icon-hover-bg-fg"></span>
-                                <img src="./assets/img/icons/ui-icons/instagram.svg" alt="instagram app icon" class="icon-hover-content group-hover:hidden"/>
-                                <img src="./assets/img/icons/ui-icons/instagram-white.svg" alt="instagram app icon" class="icon-hover-content hidden group-hover:block"/>
-                            </a>
-                        </li>
-                        <li><a class="icon-hover group inline-block w-5" href="">
-                            <span class="icon-bg-bg"></span>
-                            <span class="icon-hover-bg-fg"></span>
-                            <img src="./assets/img/icons/ui-icons/facebook.svg" alt="facebook app icon" class="icon-hover-content group-hover:hidden"/>
-                            <img src="./assets/img/icons/ui-icons/facebook-white.svg" alt="facebook app icon" class="icon-hover-content hidden group-hover:block"/>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <p>© 2026 Candela. All rights reserved. | Privacy Policy | Terms of Service</p>
-            </div>
+      <div class="container column-center gap-15">
+        <div class="grid-responsive-4 gap-y-8 border-b border-fg pb-8">
+          <div class="column gap-4 w-[70%]">
+            <a href="#"
+              ><img src="./assets/img/icons/logo/logo.svg" alt="candela logo"
+            /></a>
+            <p class="text-start">
+              Handcrafted candles that bring warmth and elegance to your space.
+            </p>
+          </div>
+          <div class="column gap-4 ">
+            <h3>quick links</h3>
+            <ul class="column footer-link">
+              <li><a class="link-hover" href="./index.html">home</a></li>
+              <li><a class="link-hover" href="./shop.html">shop</a></li>
+              <li><a class="link-hover" href="./packages.html">packages</a></li>
+              <li><a class="link-hover" href="./contact.html">contact</a></li>
+            </ul>
+          </div>
+          <div class="column gap-4">
+            <h3>contact</h3>
+            <ul class="column footer-link">
+              <li>
+                <a class="link-hover group/address" href="">
+                  <div class="row-between gap-1">
+                    <img
+                      src="./assets/img/icons/ui-icons/location-dot.svg"
+                      alt="loction icon"
+                      class="size-4 group-hover/address:hidden"
+                    />
+                    <img
+                      src="./assets/img/icons/ui-icons/location-dot-hover.svg"
+                      alt="loction icon"
+                      class="size-4 hidden group-hover/address:block"
+                    />
+                    Ein Misbah, Ramallah, Palestine
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="link-hover group/phone" href="">
+                  <div class="row-between gap-1">
+                    <img
+                      src="./assets/img/icons/ui-icons/phone.svg"
+                      alt="phone icon"
+                      class="size-4 group-hover/phone:hidden"
+                    />
+                    <img
+                      src="./assets/img/icons/ui-icons/phone-hover.svg"
+                      alt="phone icon"
+                      class="size-4 hidden group-hover/phone:block"
+                    />
+                    +970 59 123 4567
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="link-hover group/email" href="">
+                  <div class="row-between gap-1">
+                    <img
+                      src="./assets/img/icons/ui-icons/email.svg"
+                      alt="email icon"
+                      class="size-4 group-hover/email:hidden"
+                    />
+                    <img
+                      src="./assets/img/icons/ui-icons/email-hover.svg"
+                      alt="email icon"
+                      class="size-4 hidden group-hover/email:block"
+                    />
+                    candela@gmail.com
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="column gap-4">
+            <h3>follow us</h3>
+            <ul class="row-between gap-3">
+              <li>
+                <a class="icon-hover group inline-block w-5" href="">
+                  <span class="icon-bg-bg"></span>
+                  <span class="icon-hover-bg-fg"></span>
+                  <img
+                    src="./assets/img/icons/ui-icons/instagram-black.svg"
+                    alt="instagram app icon"
+                    class="icon-hover-content group-hover:hidden"
+                  />
+                  <img
+                    src="./assets/img/icons/ui-icons/instagram-white.svg"
+                    alt="instagram app icon"
+                    class="icon-hover-content hidden group-hover:block"
+                  />
+                </a>
+              </li>
+              <li>
+                <a class="icon-hover group inline-block w-5" href="">
+                  <span class="icon-bg-bg"></span>
+                  <span class="icon-hover-bg-fg"></span>
+                  <img
+                    src="./assets/img/icons/ui-icons/facebook-black.svg"
+                    alt="facebook app icon"
+                    class="icon-hover-content group-hover:hidden"
+                  />
+                  <img
+                    src="./assets/img/icons/ui-icons/facebook-white.svg"
+                    alt="facebook app icon"
+                    class="icon-hover-content hidden group-hover:block"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div>
+          <p>
+            © 2026 Candela. All rights reserved. | Privacy Policy | Terms of
+            Service
+          </p>
+        </div>
+      </div>
     </footer>
 </body>
 </html>

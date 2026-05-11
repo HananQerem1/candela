@@ -10,7 +10,6 @@
     --color-fg:#E8A5C2;
     --color-fg-hover:#E8A5C280;
     --color-fg-secondary:#B08BBB;
-    --color-fg-secondary-hover:#B08BBB80;
     --color-fg-subtle:var(--color-bg);/*placeholders and descriptions*/
     --color-fg-muted:var(--color-bg-secondary); /*details*/
     
@@ -53,7 +52,7 @@
     }
     h3{
         @apply font-[Cormorant] capitalize text-left font-semibold;
-        @apply text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px];
+        @apply text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px];
     }
     p{
         @apply font-[Inter] text-secondary;
@@ -86,7 +85,10 @@
         @apply bg-cover bg-center;
     }
     .grid-responsive-4{
-        @apply grid grid-cols-1 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full;
+        @apply grid grid-cols-1 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4 w-full;
+    }
+    .filter-group{
+        @apply flex flex-wrap gap-2 md:gap-3;
     }
 }
 @layer components{
@@ -152,17 +154,20 @@
         @apply text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px];
     }
     .button-secondary{
-        @apply bg-fg rounded-2xl py-1 transition hover:opacity-90;
+        @apply bg-fg rounded-2xl transition hover:opacity-90;
     }
-    .search-input-bar{
-        @apply bg-bg-secondary rounded-2xl border border-fg-hover p-1 focus-within:border-fg;
+    .panel{
+        @apply bg-bg-secondary rounded-2xl border border-fg/25 p-5;
     }
     .badge{
-        @apply absolute top-3 right-3 w-fit h-5.5 px-3 rounded-2xl z-0;
+        @apply absolute top-3 right-3 w-fit h-5.5 px-3 py-1 rounded-2xl z-0;
         background-color: var(--color-fg);
     }
-    .pagenamtion-bg{
+    .pagination-bg{
         @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-7.5 h-7.5 rounded-full scale-0 transform transition duration-300 z-1;
         background: var(--gradient-button);
+    }
+    .panel-fg-bg{
+        @apply bg-bg scale-100 rounded-full px-3 py-1;
     }
 }

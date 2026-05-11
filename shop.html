@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Explore all Candela candle collections. Browse by scent, style, and mood to find the perfect candle for every space and occasion."
-    />
+      content="Explore all Candela candle collections. Browse by scent, style, and mood to find the perfect candle for every space and occasion."/>
     <link rel="stylesheet" href="./assets/css/output.css" />
     <title>All Categories</title>
   </head>
@@ -50,6 +49,12 @@
                 <img
                   src="./assets/img/icons/ui-icons/heart-black.svg"
                   alt="favarites icon"
+                  class="group-hover:hidden"
+                />
+                <img
+                  src="./assets/img/icons/ui-icons/heart-white.svg"
+                  alt="favarites icon"
+                  class="hidden group-hover:block"
                 />
               </a>
             </li>
@@ -57,8 +62,14 @@
               <span class="icon-hover-bg-fg"></span>
               <a class="icon-hover-content" href="./cart.html">
                 <img
-                  src="./assets/img/icons/ui-icons/cart.svg"
+                  src="./assets/img/icons/ui-icons/cart-black.svg"
                   alt="cart icon"
+                  class="group-hover:hidden"
+                />
+                <img
+                  src="./assets/img/icons/ui-icons/cart-white.svg"
+                  alt="cart icon"
+                  class="hidden group-hover:block"
                 />
               </a>
             </li>
@@ -66,8 +77,14 @@
               <span class="icon-hover-bg-fg"></span>
               <a class="icon-hover-content" href="./account.html">
                 <img
-                  src="./assets/img/icons/ui-icons/user.svg"
+                  src="./assets/img/icons/ui-icons/user-black.svg"
                   alt="user icon"
+                  class="group-hover:hidden"
+                />
+                <img
+                  src="./assets/img/icons/ui-icons/user-white.svg"
+                  alt="user icon"
+                  class="hidden group-hover:block"
                 />
               </a>
             </li>
@@ -86,40 +103,153 @@
     <main>
       <section class="collections pt-20 sm:pt-25">
         <div class="container column gap-7">
-          <div class="column gap-2">
+          <div class="heading column gap-2">
             <h2>shop our collections</h2>
             <p>Explore our collection and discover the perfect items for you.</p>
           </div>
-          <div class="row-between gap-1 w-full">
-            <div class="search-input-bar w-full row-start gap-1">
-              <label class="w-4 sm:w-5 cursor-pointer" for="search1">
-                <img
-                  src="./assets/img/icons/ui-icons/magnifying-glass.svg"
-                  alt="magnifyin glass icon"
-                />
-              </label>
-              <input
-                id="search1"
-                type="text"
-                name="search"
-                placeholder="Search candles..."
-                class="placeholder:text-gray-400 placeholder:text-[15px] focus:outline-none w-full"
-              />
-            </div>
-            <button class="button-secondary px-5">
-              <div class="center gap-1">
-                <img
-                  src="./assets/img/icons/ui-icons/sliders.svg"
-                  alt="sliders icon"
-                  class="w-3 sm:w-4"
-                />
-                <p>Filters</p>
+          <div class="items column gap-7 w-full">
+            <div class="search-filter-bar grid grid-cols-11 gap-3 w-full">
+              <div class="panel col-start-1 col-end-12 focus-within:border-fg w-full row-start gap-1 py-1">
+                  <label class="w-4 sm:w-5 cursor-pointer" for="search">
+                    <img
+                      src="./assets/img/icons/ui-icons/magnifying-glass.svg"
+                      alt="magnifyin glass icon"
+                    />
+                  </label>
+                  <input
+                    id="search"
+                    type="text"
+                    name="search"
+                    placeholder="Search candles..."
+                    class="placeholder:text-gray-400 placeholder:text-[15px] focus:outline-none w-full"
+                  />
               </div>
-            </button>
-          </div>
-          <div class="column gap-2 w-full">
+              <input id="filters-toggle" type="checkbox" class="peer hidden">
+              <label for="filters-toggle" class="button-secondary px-5 py-2 center gap-1 text-[12px] md:text-[14px] cursor-pointer col-end-13">
+                <img
+                    src="./assets/img/icons/ui-icons/sliders.svg"
+                    alt="sliders icon"
+                    class="w-3"
+                >          
+                Filters
+              </label>
+              <div class="panel hidden col-start-1 col-end-13 gap-y-5 peer-checked:grid">
+                  <div class="category column gap-2">
+                    <h3>category</h3>
+                    <div class="filter-group">
+                      <label class="cursor-pointer">
+                        <input type="radio" name="category" class="hidden peer" checked />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg peer-checked:duration-300">All</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="category" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg peer-checked:duration-300">Scented</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="category" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg peer-checked:duration-300">Decorative</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="category" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg peer-checked:duration-300">Luxury</p>  
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="category" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg peer-checked:duration-300">Gift Sets</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="category" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg peer-checked:duration-300">Wax Melts</p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="scent column gap-2">
+                    <h3>scent</h3>
+                    <div class="filter-group">
+                      <label class="scent cursor-pointer">
+                        <input type="radio" name="scent" class="hidden peer" checked/>
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary/70 peer-checked:duration-300">All</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="scent" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary/70 peer-checked:duration-300">Lavender</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="scent" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary/70 peer-checked:duration-300">Rose</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="scent" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary/70 peer-checked:duration-300">Vanilla</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="scent" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary/70 peer-checked:duration-300">Ocean</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="scent" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary/70 peer-checked:duration-300">Citrus</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="scent" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary/70 peer-checked:duration-300">Amber</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="scent" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary/70 peer-checked:duration-300">Jasmine</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="scent" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary/70 peer-checked:duration-300">Eucalyptus</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="scent" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary/70 peer-checked:duration-300">Peony</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="scent" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary/70 peer-checked:duration-300">Sandalwood</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="scent" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary/70 peer-checked:duration-300">Cherry</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="scent" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary/70 peer-checked:duration-300">Coconut</p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="price column gap-2">
+                    <h3>price range</h3>
+                    <div class="filter-group">
+                      <label class="cursor-pointer">
+                        <input type="radio" name="price" class="hidden peer" checked/>
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary peer-checked:duration-300">All</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="price" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary peer-checked:duration-300">Under $25</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="price" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary peer-checked:duration-300">$25 - $30</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="price" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary peer-checked:duration-300">$30 - $35</p>
+                      </label>
+                      <label class="cursor-pointer">
+                        <input type="radio" name="price" class="hidden peer" />
+                        <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary peer-checked:duration-300">Over $35</p>
+                      </label>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="items-card column gap-2 w-full">
             <p>Showing 76 products</p>
-            <div class="hidden sm:grid grid-responsive-4 gap-x-4 gap-y-8 w-full">
+            <div class="hidden sm:grid grid-responsive-4 gap-y-8 w-full">
               <div class="relative group">
                 <div class="card-img">
                   <div
@@ -132,12 +262,10 @@
                   <h3 class="group-hover:text-fg">lavender dreams</h3>
                   <span>$32.00</span>
                 </div>
-                <div class="group-hover:hidden badge">
+                <div class="group-hover:hidden badge center">
                   <p class="text-primary">Best Seller</p>
                 </div>
-                <div
-                  class="hidden group-hover:block favarite-icon-absolute w-5"
-                >
+                <div class="hidden group-hover:block favarite-icon-absolute w-5">
                   <span class="icon-hover-bg-bg"></span>
                   <a class="icon-hover-content">
                     <img
@@ -150,7 +278,7 @@
                   <span class="icon-hover-bg-fg"></span>
                   <a class="icon-hover-content">
                     <img
-                      src="./assets/img/icons/ui-icons/cart.svg"
+                      src="./assets/img/icons/ui-icons/cart-black.svg"
                       alt="cart icon"
                     />
                   </a>
@@ -168,12 +296,10 @@
                   <h3 class="group-hover:text-fg">rose garden</h3>
                   <span>$28.00</span>
                 </div>
-                <div class="group-hover:hidden badge">
+                <div class="group-hover:hidden badge center">
                   <p class="text-primary">Best Seller</p>
                 </div>
-                <div
-                  class="hidden group-hover:block favarite-icon-absolute w-5"
-                >
+                <div class="hidden group-hover:block favarite-icon-absolute w-5">
                   <span class="icon-hover-bg-bg"></span>
                   <a class="icon-hover-content">
                     <img
@@ -186,7 +312,7 @@
                   <span class="icon-hover-bg-fg"></span>
                   <a class="icon-hover-content">
                     <img
-                      src="./assets/img/icons/ui-icons/cart.svg"
+                      src="./assets/img/icons/ui-icons/cart-black.svg"
                       alt="cart icon"
                     />
                   </a>
@@ -204,12 +330,10 @@
                   <h3 class="group-hover:text-fg">vanilla beans</h3>
                   <span>$24.00</span>
                 </div>
-                <div class="group-hover:hidden badge">
+                <div class="group-hover:hidden badge center">
                   <p class="text-primary">Best Seller</p>
                 </div>
-                <div
-                  class="hidden group-hover:block favarite-icon-absolute w-5"
-                >
+                <div class="hidden group-hover:block favarite-icon-absolute w-5">
                   <span class="icon-hover-bg-bg"></span>
                   <a class="icon-hover-content">
                     <img
@@ -222,7 +346,7 @@
                   <span class="icon-hover-bg-fg"></span>
                   <a class="icon-hover-content">
                     <img
-                      src="./assets/img/icons/ui-icons/cart.svg"
+                      src="./assets/img/icons/ui-icons/cart-black.svg"
                       alt="cart icon"
                     />
                   </a>
@@ -240,12 +364,10 @@
                   <h3 class="group-hover:text-fg">iced latte</h3>
                   <span>$30.00</span>
                 </div>
-                <div class="group-hover:hidden badge">
+                <div class="group-hover:hidden badge center">
                   <p class="text-primary">Best Seller</p>
                 </div>
-                <div
-                  class="hidden group-hover:block favarite-icon-absolute w-5"
-                >
+                <div class="hidden group-hover:block favarite-icon-absolute w-5">
                   <span class="icon-hover-bg-bg"></span>
                   <a class="icon-hover-content">
                     <img
@@ -258,7 +380,7 @@
                   <span class="icon-hover-bg-fg"></span>
                   <a class="icon-hover-content">
                     <img
-                      src="./assets/img/icons/ui-icons/cart.svg"
+                      src="./assets/img/icons/ui-icons/cart-black.svg"
                       alt="cart icon"
                     />
                   </a>
@@ -276,12 +398,10 @@
                   <h3 class="group-hover:text-fg">fresh lemon zest</h3>
                   <span>$26.00</span>
                 </div>
-                <div class="group-hover:hidden badge">
+                <div class="group-hover:hidden badge center">
                   <p class="text-primary">Best Seller</p>
                 </div>
-                <div
-                  class="hidden group-hover:block favarite-icon-absolute w-5"
-                >
+                <div class="hidden group-hover:block favarite-icon-absolute w-5">
                   <span class="icon-hover-bg-bg"></span>
                   <a class="icon-hover-content">
                     <img
@@ -294,7 +414,7 @@
                   <span class="icon-hover-bg-fg"></span>
                   <a class="icon-hover-content">
                     <img
-                      src="./assets/img/icons/ui-icons/cart.svg"
+                      src="./assets/img/icons/ui-icons/cart-black.svg"
                       alt="cart icon"
                     />
                   </a>
@@ -312,9 +432,7 @@
                   <h3 class="group-hover:text-fg">quietude</h3>
                   <span>$35.00</span>
                 </div>
-                <div
-                  class="hidden group-hover:block favarite-icon-absolute w-5"
-                >
+                <div class="hidden group-hover:block favarite-icon-absolute w-5">
                   <span class="icon-hover-bg-bg"></span>
                   <a class="icon-hover-content">
                     <img
@@ -327,7 +445,7 @@
                   <span class="icon-hover-bg-fg"></span>
                   <a class="icon-hover-content">
                     <img
-                      src="./assets/img/icons/ui-icons/cart.svg"
+                      src="./assets/img/icons/ui-icons/cart-black.svg"
                       alt="cart icon"
                     />
                   </a>
@@ -345,9 +463,7 @@
                   <h3 class="group-hover:text-fg">peony bouquet</h3>
                   <span>$34.00</span>
                 </div>
-                <div
-                  class="hidden group-hover:block favarite-icon-absolute w-5"
-                >
+                <div class="hidden group-hover:block favarite-icon-absolute w-5">
                   <span class="icon-hover-bg-bg"></span>
                   <a class="icon-hover-content">
                     <img
@@ -360,7 +476,7 @@
                   <span class="icon-hover-bg-fg"></span>
                   <a class="icon-hover-content">
                     <img
-                      src="./assets/img/icons/ui-icons/cart.svg"
+                      src="./assets/img/icons/ui-icons/cart-black.svg"
                       alt="cart icon"
                     />
                   </a>
@@ -378,12 +494,10 @@
                   <h3 class="group-hover:text-fg">oud</h3>
                   <span>$27.00</span>
                 </div>
-                <div class="group-hover:hidden badge">
+                <div class="group-hover:hidden badge center">
                   <p class="text-primary">Best Seller</p>
                 </div>
-                <div
-                  class="hidden group-hover:block favarite-icon-absolute w-5"
-                >
+                <div class="hidden group-hover:block favarite-icon-absolute w-5">
                   <span class="icon-hover-bg-bg"></span>
                   <a class="icon-hover-content">
                     <img
@@ -396,7 +510,7 @@
                   <span class="icon-hover-bg-fg"></span>
                   <a class="icon-hover-content">
                     <img
-                      src="./assets/img/icons/ui-icons/cart.svg"
+                      src="./assets/img/icons/ui-icons/cart-black.svg"
                       alt="cart icon"
                     />
                   </a>
@@ -414,9 +528,7 @@
                   <h3 class="group-hover:text-fg">the minimalist finials</h3>
                   <span>$29.00</span>
                 </div>
-                <div
-                  class="hidden group-hover:block favarite-icon-absolute w-5"
-                >
+                <div class="hidden group-hover:block favarite-icon-absolute w-5">
                   <span class="icon-hover-bg-bg"></span>
                   <a class="icon-hover-content">
                     <img
@@ -429,7 +541,7 @@
                   <span class="icon-hover-bg-fg"></span>
                   <a class="icon-hover-content">
                     <img
-                      src="./assets/img/icons/ui-icons/cart.svg"
+                      src="./assets/img/icons/ui-icons/cart-black.svg"
                       alt="cart icon"
                     />
                   </a>
@@ -447,9 +559,7 @@
                   <h3 class="group-hover:text-fg">mint</h3>
                   <span>$38.00</span>
                 </div>
-                <div
-                  class="hidden group-hover:block favarite-icon-absolute w-5"
-                >
+                <div class="hidden group-hover:block favarite-icon-absolute w-5">
                   <span class="icon-hover-bg-bg"></span>
                   <a class="icon-hover-content">
                     <img
@@ -462,7 +572,7 @@
                   <span class="icon-hover-bg-fg"></span>
                   <a class="icon-hover-content">
                     <img
-                      src="./assets/img/icons/ui-icons/cart.svg"
+                      src="./assets/img/icons/ui-icons/cart-black.svg"
                       alt="cart icon"
                     />
                   </a>
@@ -480,12 +590,10 @@
                   <h3 class="group-hover:text-fg">cherry</h3>
                   <span>$31.00</span>
                 </div>
-                <div class="group-hover:hidden badge">
+                <div class="group-hover:hidden badge center">
                   <p class="text-primary">Best Seller</p>
                 </div>
-                <div
-                  class="hidden group-hover:block favarite-icon-absolute w-5"
-                >
+                <div class="hidden group-hover:block favarite-icon-absolute w-5">
                   <span class="icon-hover-bg-bg"></span>
                   <a class="icon-hover-content">
                     <img
@@ -498,7 +606,7 @@
                   <span class="icon-hover-bg-fg"></span>
                   <a class="icon-hover-content">
                     <img
-                      src="./assets/img/icons/ui-icons/cart.svg"
+                      src="./assets/img/icons/ui-icons/cart-black.svg"
                       alt="cart icon"
                     />
                   </a>
@@ -516,9 +624,7 @@
                   <h3 class="group-hover:text-fg">coconut</h3>
                   <span>$25.00</span>
                 </div>
-                <div
-                  class="hidden group-hover:block favarite-icon-absolute w-5"
-                >
+                <div class="hidden group-hover:block favarite-icon-absolute w-5">
                   <span class="icon-hover-bg-bg"></span>
                   <a class="icon-hover-content">
                     <img
@@ -531,112 +637,169 @@
                   <span class="icon-hover-bg-fg"></span>
                   <a class="icon-hover-content">
                     <img
-                      src="./assets/img/icons/ui-icons/cart.svg"
+                      src="./assets/img/icons/ui-icons/cart-black.svg"
                       alt="cart icon"
                     />
                   </a>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row-start gap-7 center w-full">
+            </div>
+            <div class="pagenation row-start gap-7 center w-full">
             <div class="cursor-pointer">
-                <img src="./assets/img/icons/ui-icons/angle-left.svg" alt="pagination left angle"/>
+              <img src="./assets/img/icons/ui-icons/angle-left.svg" alt="pagination left angle"/>
             </div>
             <div class="row-between gap-9">
-                <label class="relative cursor-pointer">
-                    <input type="radio" name="items" class="hidden peer" checked>
-                    <span class="pagenamtion-bg peer-checked:scale-100"></span>
-                    <p class="icon-hover-content">1</p>
-                </label>
-                <label class="relative cursor-pointer">
-                    <input type="radio" name="items" class="hidden peer">
-                    <span class="pagenamtion-bg peer-checked:scale-100"></span>
-                    <p class="icon-hover-content">2</p>
-                </label>
-                <label class="relative cursor-pointer">
-                    <input type="radio" name="items" class="hidden peer">
-                    <span class="pagenamtion-bg peer-checked:scale-100"></span>
-                    <p class="icon-hover-content">3</p>
-                </label>
-                <label class="relative cursor-pointer">
-                    <input type="radio" name="items" class="hidden peer">
-                    <span class="pagenamtion-bg peer-checked:scale-100"></span>
-                    <p class="icon-hover-content">4</p>
-                </label>
+              <label class="relative cursor-pointer">
+                <input type="radio" name="items" class="hidden peer" checked />
+                <span class="pagination-bg peer-checked:scale-100"></span>
+                <p class="icon-hover-content peer-checked:text-accent">1</p>
+              </label>
+              <label class="relative cursor-pointer">
+                <input type="radio" name="items" class="hidden peer" />
+                <span class="pagination-bg peer-checked:scale-100"></span>
+                <p class="icon-hover-content peer-checked:text-accent">2</p>
+              </label>
+              <label class="relative cursor-pointer">
+                <input type="radio" name="items" class="hidden peer" />
+                <span class="pagination-bg peer-checked:scale-100"></span>
+                <p class="icon-hover-content peer-checked:text-accent">3</p>
+              </label>
+              <label class="relative cursor-pointer">
+                <input type="radio" name="items" class="hidden peer" />
+                <span class="pagination-bg peer-checked:scale-100"></span>
+                <p class="icon-hover-content peer-checked:text-accent">4</p>
+              </label>
             </div>
             <div class="cursor-pointer">
-                    <img src="./assets/img/icons/ui-icons/angle-right.svg" alt="pagination right angle"/>
+              <img src="./assets/img/icons/ui-icons/angle-right.svg" alt="pagination right angle"/>
+            </div>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="bg-bg-secondary py-10 md:py-18">
-        <div class="column-center gap-15">
-            <div class="container grid-responsive-4 gap-10 lg:gap-4 border-b border-fg pb-8">
-                <div class="column gap-4">
-                    <a href="#"><img src="./assets/img/icons/logo/logo.svg" alt="candela logo"/></a>
-                    <p class="text-start">Handcrafted candles that bring warmth and elegance to your space.</p>
-                </div>
-                <div class="column gap-4">
-                    <h3>quick links</h3>
-                    <ul class="column footer-link">
-                        <li><a class="link-hover" href="./index.html">home</a></li>
-                        <li><a class= "link-hover" href="./shop.html">shop</a></li>
-                        <li><a class="link-hover" href="./packages.html">packages</a></li>
-                        <li><a class="link-hover" href="./contact.html">contact</a></li>
-                    </ul>
-                </div>
-                <div class="column gap-4">
-                    <h3>contact</h3>
-                    <ul class="column footer-link">
-                        <li><a class="link-hover group/address" href="">
-                                <div class="row-between gap-1">
-                                    <img src="./assets/img/icons/ui-icons/location-dot.svg" alt="loction icon" class="size-4 group-hover/address:hidden"/>
-                                    <img src="./assets/img/icons/ui-icons/location-dot-hover.svg" alt="loction icon" class="size-4 hidden group-hover/address:block"/>
-                                    Ein Misbah, Ramallah, Palestine
-                                </div>
-                            </a>
-                        </li>
-                        <li><a class="link-hover group/phone" href="">
-                                <div class="row-between gap-1">
-                                    <img src="./assets/img/icons/ui-icons/phone.svg" alt="phone icon" class="size-4 group-hover/phone:hidden"/>
-                                    <img src="./assets/img/icons/ui-icons/phone-hover.svg" alt="phone icon" class="size-4 hidden group-hover/phone:block"/>
-                                    +970 59 123 4567
-                                </div>
-                            </a>
-                        </li>
-                        <li><a class="link-hover group/email" href="">
-                                <div class="row-between gap-1">
-                                    <img src="./assets/img/icons/ui-icons/email.svg" alt="email icon" class="size-4 group-hover/email:hidden"/>
-                                    <img src="./assets/img/icons/ui-icons/email-hover.svg" alt="email icon" class="size-4 hidden group-hover/email:block"/>
-                                    candela@gmail.com
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column gap-4">
-                    <h3>follow us</h3>
-                    <ul class="row-between gap-3">
-                        <li><a class="icon-hover group inline-block w-5" href="">
-                            <span class="icon-hover-bg-fg"></span>
-                                <img src="./assets/img/icons/ui-icons/instagram.svg" alt="instagram app icon" class="icon-hover-content"/>
-                            </a>
-                        </li>
-                        <li><a class="icon-hover group inline-block w-5" href="">
-                            <span class="icon-hover-bg-fg"></span>
-                            <img src="./assets/img/icons/ui-icons/facebook.svg" alt="facebook app icon" class="icon-hover-content"/>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <p>© 2026 Candela. All rights reserved. | Privacy Policy | Terms of Service</p>
-            </div>
+      <div class="container column-center gap-15">
+        <div class="grid-responsive-4 gap-y-8 border-b border-fg pb-8">
+          <div class="column gap-4 w-[70%]">
+            <a href="#"
+              ><img src="./assets/img/icons/logo/logo.svg" alt="candela logo"
+            /></a>
+            <p class="text-start">
+              Handcrafted candles that bring warmth and elegance to your space.
+            </p>
+          </div>
+          <div class="column gap-4 ">
+            <h3>quick links</h3>
+            <ul class="column footer-link">
+              <li><a class="link-hover" href="./index.html">home</a></li>
+              <li><a class="link-hover" href="./shop.html">shop</a></li>
+              <li><a class="link-hover" href="./packages.html">packages</a></li>
+              <li><a class="link-hover" href="./contact.html">contact</a></li>
+            </ul>
+          </div>
+          <div class="column gap-4">
+            <h3>contact</h3>
+            <ul class="column footer-link">
+              <li>
+                <a class="link-hover group/address" href="">
+                  <div class="row-between gap-1">
+                    <img
+                      src="./assets/img/icons/ui-icons/location-dot.svg"
+                      alt="loction icon"
+                      class="size-4 group-hover/address:hidden"
+                    />
+                    <img
+                      src="./assets/img/icons/ui-icons/location-dot-hover.svg"
+                      alt="loction icon"
+                      class="size-4 hidden group-hover/address:block"
+                    />
+                    Ein Misbah, Ramallah, Palestine
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="link-hover group/phone" href="">
+                  <div class="row-between gap-1">
+                    <img
+                      src="./assets/img/icons/ui-icons/phone.svg"
+                      alt="phone icon"
+                      class="size-4 group-hover/phone:hidden"
+                    />
+                    <img
+                      src="./assets/img/icons/ui-icons/phone-hover.svg"
+                      alt="phone icon"
+                      class="size-4 hidden group-hover/phone:block"
+                    />
+                    +970 59 123 4567
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="link-hover group/email" href="">
+                  <div class="row-between gap-1">
+                    <img
+                      src="./assets/img/icons/ui-icons/email.svg"
+                      alt="email icon"
+                      class="size-4 group-hover/email:hidden"
+                    />
+                    <img
+                      src="./assets/img/icons/ui-icons/email-hover.svg"
+                      alt="email icon"
+                      class="size-4 hidden group-hover/email:block"
+                    />
+                    candela@gmail.com
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="column gap-4">
+            <h3>follow us</h3>
+            <ul class="row-between gap-3">
+              <li>
+                <a class="icon-hover group inline-block w-5" href="">
+                  <span class="icon-bg-bg"></span>
+                  <span class="icon-hover-bg-fg"></span>
+                  <img
+                    src="./assets/img/icons/ui-icons/instagram-black.svg"
+                    alt="instagram app icon"
+                    class="icon-hover-content group-hover:hidden"
+                  />
+                  <img
+                    src="./assets/img/icons/ui-icons/instagram-white.svg"
+                    alt="instagram app icon"
+                    class="icon-hover-content hidden group-hover:block"
+                  />
+                </a>
+              </li>
+              <li>
+                <a class="icon-hover group inline-block w-5" href="">
+                  <span class="icon-bg-bg"></span>
+                  <span class="icon-hover-bg-fg"></span>
+                  <img
+                    src="./assets/img/icons/ui-icons/facebook-black.svg"
+                    alt="facebook app icon"
+                    class="icon-hover-content group-hover:hidden"
+                  />
+                  <img
+                    src="./assets/img/icons/ui-icons/facebook-white.svg"
+                    alt="facebook app icon"
+                    class="icon-hover-content hidden group-hover:block"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div>
+          <p>
+            © 2026 Candela. All rights reserved. | Privacy Policy | Terms of
+            Service
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

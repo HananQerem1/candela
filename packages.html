@@ -1,56 +1,675 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Candela's beautifully crafted candle packages, perfect for gifting. Elegant sets designed to add warmth and charm to every special moment.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover Candela's beautifully crafted candle packages, perfect for gifting. Elegant sets designed to add warmth and charm to every special moment."
+    />
     <link rel="stylesheet" href="./assets/css/output.css" />
     <title>Candle Packages</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="py-4 position: fixed w-full z-2 bg-bg border-b border-fg">
-        <div class="container row-between">
-            <div class="logo max-md:w-20">
-                <a href="./index.html"><img src="./assets/img/icons/logo/logo.svg" alt="candela logo"/></a>
-            </div>
-            <nav class="links hidden md:block">
-                <ul class="row-between gap-8">
-                    <li><a class="max-lg:text-[14.5px] link-hover" href="./index.html">home</a></li>
-                    <li><a class="max-lg:text-[14.5px] link-hover" href="./shop.html">shop</a></li>
-                    <li><a class="max-lg:text-[14.5px] link-hover" href="./packages.html">packages</a></li>
-                    <li><a class="max-lg:text-[14.5px] link-hover" href="./contact.html">contact</a></li>
-                </ul>
-            </nav>
-            <nav class="icons hidden md:block">
-                <ul class="row-between gap-4">
-                    <li class="icon-hover group w-5">
-                        <span class="icon-hover-bg-fg"></span>
-                        <a class="icon-hover-content" href="./wishlist.html">
-                            <img src="./assets/img/icons/ui-icons/heart-black.svg" alt="favarites icon" class="group-hover:hidden"/>
-                            <img src="./assets/img/icons/ui-icons/heart-white.svg" alt="favarites icon" class="hidden group-hover:block"/>
-                        </a>
-                    </li>
-                    <li class="icon-hover group w-5">
-                        <span class="icon-hover-bg-fg"></span>
-                        <a class="icon-hover-content" href="./cart.html">
-                            <img src="./assets/img/icons/ui-icons/cart-black.svg" alt="cart icon" class="group-hover:hidden"/>
-                            <img src="./assets/img/icons/ui-icons/cart-white.svg" alt="cart icon" class="hidden group-hover:block"/>
-                        </a>
-                    </li>
-                    <li class="icon-hover group w-5">
-                        <span class="icon-hover-bg-fg"></span>
-                        <a class="icon-hover-content" href="./account.html">
-                            <img src="./assets/img/icons/ui-icons/user-black.svg" alt="user icon" class="group-hover:hidden"/>
-                            <img src="./assets/img/icons/ui-icons/user-white.svg" alt="user icon" class="hidden group-hover:block"/>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="icon-hover group w-5 md:hidden">
-                <span class="icon-hover-bg-fg"></span>
-                <img class="icon-hover-content" src="./assets/img/icons/ui-icons/bars.svg" alt="bars icon" />
-            </button>
+      <div class="container row-between">
+        <div class="logo max-md:w-20">
+          <a href="./index.html"
+            ><img src="./assets/img/icons/logo/logo.svg" alt="candela logo"
+          /></a>
         </div>
+        <nav class="links hidden md:block">
+          <ul class="row-between gap-8">
+            <li>
+              <a class="max-lg:text-[14.5px] link-hover" href="./index.html"
+                >home</a
+              >
+            </li>
+            <li>
+              <a class="max-lg:text-[14.5px] link-hover" href="./shop.html"
+                >shop</a
+              >
+            </li>
+            <li>
+              <a class="max-lg:text-[14.5px] link-hover" href="./packages.html"
+                >packages</a
+              >
+            </li>
+            <li>
+              <a class="max-lg:text-[14.5px] link-hover" href="./contact.html"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav class="icons hidden md:block">
+          <ul class="row-between gap-4">
+            <li class="icon-hover group w-5">
+              <span class="icon-hover-bg-fg"></span>
+              <a class="icon-hover-content" href="./wishlist.html">
+                <img
+                  src="./assets/img/icons/ui-icons/heart-black.svg"
+                  alt="favarites icon"
+                  class="group-hover:hidden"
+                />
+                <img
+                  src="./assets/img/icons/ui-icons/heart-white.svg"
+                  alt="favarites icon"
+                  class="hidden group-hover:block"
+                />
+              </a>
+            </li>
+            <li class="icon-hover group w-5">
+              <span class="icon-hover-bg-fg"></span>
+              <a class="icon-hover-content" href="./cart.html">
+                <img
+                  src="./assets/img/icons/ui-icons/cart-black.svg"
+                  alt="cart icon"
+                  class="group-hover:hidden"
+                />
+                <img
+                  src="./assets/img/icons/ui-icons/cart-white.svg"
+                  alt="cart icon"
+                  class="hidden group-hover:block"
+                />
+              </a>
+            </li>
+            <li class="icon-hover group w-5">
+              <span class="icon-hover-bg-fg"></span>
+              <a class="icon-hover-content" href="./account.html">
+                <img
+                  src="./assets/img/icons/ui-icons/user-black.svg"
+                  alt="user icon"
+                  class="group-hover:hidden"
+                />
+                <img
+                  src="./assets/img/icons/ui-icons/user-white.svg"
+                  alt="user icon"
+                  class="hidden group-hover:block"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="icon-hover group w-5 md:hidden">
+          <span class="icon-hover-bg-fg"></span>
+          <img
+            class="icon-hover-content"
+            src="./assets/img/icons/ui-icons/bars.svg"
+            alt="bars icon"
+          />
+        </button>
+      </div>
     </header>
-</body>
+    <main>
+        <section class="packages pt-20 sm:pt-25">
+            <div class="container column gap-7">
+                <div class="heading column gap-2">
+                  <h2>our packages</h2>
+                  <p>Find the perfect packages designed with love, match your mood, style, perfect for gifts and celebrations.</p>
+                </div>
+                <div class="items column gap-7 w-full">
+                    <div class="search-filter-bar grid grid-cols-11 gap-3 w-full">
+                      <div class="panel col-start-1 col-end-12 focus-within:border-fg w-full row-start gap-1 py-1">
+                        <label class="w-4 sm:w-5 cursor-pointer" for="search">
+                          <img
+                            src="./assets/img/icons/ui-icons/magnifying-glass.svg"
+                            alt="magnifyin glass icon"
+                          />
+                        </label>
+                        <input
+                          id="search"
+                          type="text"
+                          name="search"
+                          placeholder="Search candles..."
+                          class="placeholder:text-gray-400 placeholder:text-[15px] focus:outline-none w-full"
+                        />
+                      </div>
+                      <input id="filters-toggle" type="checkbox" class="peer hidden">
+                      <label for="filters-toggle" class="button-secondary px-5 py-2 center gap-1 text-[12px] md:text-[14px] cursor-pointer col-end-13">
+                        <img
+                          src="./assets/img/icons/ui-icons/sliders.svg"
+                          alt="sliders icon"
+                          class="w-3"
+                        >          
+                        Filters
+                      </label>
+                      <div class="panel hidden col-start-1 col-end-13 gap-y-5 peer-checked:grid">
+                        <div class="category column gap-2">
+                            <h3>category</h3>
+                            <div class="filter-group">
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="category" class="hidden peer" checked />
+                                    <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg peer-checked:duration-300">All</p>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="category" class="hidden peer" />
+                                    <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg peer-checked:duration-300">Best Seller</p>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="category" class="hidden peer" />
+                                    <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg peer-checked:duration-300">Premium</p>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="category" class="hidden peer" />
+                                    <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg peer-checked:duration-300">Limited Edition</p>  
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="category" class="hidden peer" />
+                                    <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg peer-checked:duration-300">Gift Ready</p>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="category" class="hidden peer" />
+                                    <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg peer-checked:duration-300">Starter Pack</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="price column gap-2">
+                            <h3>price range</h3>
+                            <div class="filter-group">
+                                <label class="cursor-pointer">
+                                  <input type="radio" name="price" class="hidden peer" checked/>
+                                  <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary peer-checked:duration-300">All</p>
+                                </label>
+                                <label class="cursor-pointer">
+                                  <input type="radio" name="price" class="hidden peer" />
+                                  <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary peer-checked:duration-300">Under $25</p>
+                                </label>
+                                <label class="cursor-pointer">
+                                  <input type="radio" name="price" class="hidden peer" />
+                                  <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary peer-checked:duration-300">$25 - $30</p>
+                                </label>
+                                <label class="cursor-pointer">
+                                  <input type="radio" name="price" class="hidden peer" />
+                                  <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary peer-checked:duration-300">$30 - $35</p>
+                                </label>
+                                <label class="cursor-pointer">
+                                  <input type="radio" name="price" class="hidden peer" />
+                                  <p class="panel-fg-bg peer-checked:text-accent peer-checked:bg-fg-secondary peer-checked:duration-300">Over $35</p>
+                                </label>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="items-card column gap-2 w-full">
+                        <p>Showing 22 packages</p>
+                        <div class="hidden sm:grid grid-responsive-4 gap-y-8 w-full">
+                            <div class="package-card group">
+                              <div class="card-img">
+                                <div
+                                  class="bg-[url('./../img/products/packages/the-latte-line.webp')] bg-cover-center card-img-hover"
+                                ></div>              
+                              </div>
+                              <div class="column gap-0.5 grow">
+                                <div class="column gap-2 p-4 grow">
+                                    <h3 class="group-hover:text-fg">the latte line</h3>
+                                    <p>Coffee-inspired candles designed to look like realistic iced lattes.</p>
+                                    <p class="item-p">includes:</p>
+                                    <ul class="space-y-2">
+                                        <li class="flex justify-start items-start gap-1"rt items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>cinnamon chai latte candle (8 oz)</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>lavender and matcha latte candle (8 oz)</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>caramel macchiato candle (8 oz)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="column gap-5 p-4 w-full border-t border-fg/50">
+                                    <div class="column gap-2">
+                                        <div class="row-start gap-2">
+                                          <span class="text-[18px]">$79.99</span>
+                                          <span class="line-through">$96</span>
+                                        </div>
+                                        <span class="text-success-bg">Save $16.01</span>
+                                    </div>
+                                    <button class="button-primary center gap-1 w-full">
+                                        <img src="./assets/img/icons/ui-icons/cart-black.svg" class="w-5" />
+                                        add to cart
+                                    </button>
+                                </div>
+                              </div>
+                              <div class="group-hover:hidden badge center">
+                                <p class="text-primary">Best Seller</p>
+                              </div>
+                              <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                                <span class="icon-hover-bg-bg"></span>
+                                <a class="icon-hover-content">
+                                  <img
+                                    src="./assets/img/icons/ui-icons/heart-black.svg"
+                                    alt="favarites icon"
+                                  />
+                                </a>
+                              </div>
+                            </div>
+                            <div class="package-card group">
+                              <div class="card-img">
+                                <div
+                                  class="bg-[url('./../img/products/packages/geometric-bubble.webp')] bg-cover-center card-img-hover"
+                                ></div>              
+                              </div>
+                              <div class="column gap-0.5 grow">
+                                <div class="column gap-2 p-4 grow">
+                                    <h3 class="group-hover:text-fg">geometric bubble</h3>
+                                    <p>Modern, sculptural bubble candles in neutral tones and two sizes.</p>
+                                    <p class="item-p">includes:</p>
+                                    <ul class="space-y-2">
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>two beige candle cubes, large and small</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>two cream candle cubes, large and small</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>two chocolate brown candle cubes, large and small</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="column gap-5 p-4 w-full border-t border-fg/50">
+                                    <div class="column gap-2">
+                                        <div class="row-start gap-2">
+                                          <span class="text-[18px]">$119.99</span>
+                                          <span class="line-through">$140</span>
+                                        </div>
+                                        <span class="text-success-bg">Save $20.01</span>
+                                    </div>
+                                    <button class="button-primary center gap-1 w-full">
+                                        <img src="./assets/img/icons/ui-icons/cart-black.svg" class="w-5" />
+                                        add to cart
+                                    </button>
+                                </div>
+                              </div>
+                              <div class="group-hover:hidden badge center">
+                                <p class="text-primary">Premium</p>
+                              </div>
+                              <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                                <span class="icon-hover-bg-bg"></span>
+                                <a class="icon-hover-content">
+                                  <img
+                                    src="./assets/img/icons/ui-icons/heart-black.svg"
+                                    alt="favarites icon"
+                                  />
+                                </a>
+                              </div>
+                            </div>
+                            <div class="package-card group">
+                              <div class="card-img">
+                                <div
+                                  class="bg-[url('./../img/products/packages/the-classic-scented-quartet.webp')] bg-cover-center card-img-hover"
+                                ></div>              
+                              </div>
+                              <div class="column gap-0.5 grow">
+                                <div class="column gap-2 p-4 grow">
+                                    <h3 class="group-hover:text-fg">the classic scented quartet</h3>
+                                    <p>Four traditional glass jar candles featuring floral, spice, and fresh scents.</p>
+                                    <p class="item-p">includes:</p>
+                                    <ul class="space-y-2">
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>lavender candle (8 oz)</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>vanilla candle (8 oz)</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>cinnamon candle (8 oz)</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>ocean breeze candle (8 oz)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="column gap-5 p-4 w-full border-t border-fg/50">
+                                    <div class="column gap-2">
+                                      <div class="row-start gap-2">
+                                        <span class="text-[18px]">$68.99</span>
+                                        <span class="line-through">$87</span>
+                                      </div>
+                                      <span class="text-success-bg">Save $18.01</span>
+                                    </div>
+                                    <button class="button-primary center gap-1 w-full">
+                                        <img src="./assets/img/icons/ui-icons/cart-black.svg" class="w-5" />
+                                        add to cart
+                                    </button>
+                                </div>
+                              </div>
+                              <div class="group-hover:hidden badge center">
+                                <p class="text-primary">Limited Edition</p>
+                              </div>
+                              <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                                <span class="icon-hover-bg-bg"></span>
+                                <a class="icon-hover-content">
+                                  <img
+                                    src="./assets/img/icons/ui-icons/heart-black.svg"
+                                    alt="favarites icon"
+                                  />
+                                </a>
+                              </div>
+                            </div>
+                            <div class="package-card group">
+                              <div class="card-img">
+                                <div
+                                  class="bg-[url('./../img/products/packages/the-pink-set.webp')] bg-cover-center card-img-hover"
+                                ></div>              
+                              </div>
+                              <div class="column gap-0.5 grow">
+                                <div class="column gap-2 p-4 grow">
+                                    <h3 class="group-hover:text-fg">the pink set</h3>
+                                    <p>Pink heart and floral candles arranged on an aesthetic tray.</p>
+                                    <p class="item-p">includes:</p>
+                                    <ul class="space-y-2">
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>textured heart candle</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>floral bowl candle (6 oz)</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>five - mini hearts</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="column gap-5 p-4 w-full border-t border-fg/50">
+                                    <div class="column gap-2">
+                                      <div class="row-start gap-2">
+                                        <span class="text-[18px]">$60.99</span>
+                                        <span class="line-through">$75</span>
+                                      </div>
+                                      <span class="text-success-bg">Save $14.01</span>
+                                    </div>
+                                    <button class="button-primary center gap-1 w-full">
+                                        <img src="./assets/img/icons/ui-icons/cart-black.svg" class="w-5" />
+                                        add to cart
+                                    </button>
+                                </div>
+                              </div>
+                              <div class="group-hover:hidden badge center">
+                                <p class="text-primary">Limited Edition</p>
+                              </div>
+                              <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                                <span class="icon-hover-bg-bg"></span>
+                                <a class="icon-hover-content">
+                                  <img
+                                    src="./assets/img/icons/ui-icons/heart-black.svg"
+                                    alt="favarites icon"
+                                  />
+                                </a>
+                              </div>
+                            </div>
+                            <div class="package-card group">
+                              <div class="card-img">
+                                <div
+                                  class="bg-[url('./../img/products/packages/tulip-set.webp')] bg-cover-center card-img-hover"
+                                ></div>              
+                              </div>
+                              <div class="column gap-0.5 grow">
+                                <div class="column gap-2 p-4 grow">
+                                    <h3 class="group-hover:text-fg">tulip set</h3>
+                                    <p>Elegant wax tulip bouquets encased in tall glass cylinders.</p>
+                                    <p class="item-p">includes:</p>
+                                    <ul class="space-y-2">
+                                        <li class="flex justify-start items-start gap-1"rt items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>four of the tall, transparent, cylindrical glass vases.</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>every vase have handcrafted tulip bouquet</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>vases tulip colors are red,white, pink and baby pink </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="column gap-5 p-4 w-full border-t border-fg/50">
+                                    <div class="column gap-2">
+                                      <div class="row-start gap-2">
+                                        <span class="text-[18px]">$49.99</span>
+                                        <span class="line-through">$60</span>
+                                      </div>
+                                      <span class="text-success-bg">Save $10.01</span>
+                                    </div>
+                                    <button class="button-primary center gap-1 w-full">
+                                        <img src="./assets/img/icons/ui-icons/cart-black.svg" class="w-5" />
+                                        add to cart
+                                    </button>
+                                </div>
+                              </div>
+                              <div class="group-hover:hidden badge center">
+                                <p class="text-primary">Starter Pack</p>
+                              </div>
+                              <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                                <span class="icon-hover-bg-bg"></span>
+                                <a class="icon-hover-content">
+                                  <img
+                                    src="./assets/img/icons/ui-icons/heart-black.svg"
+                                    alt="favarites icon"
+                                  />
+                                </a>
+                              </div>
+                            </div>
+                            <div class="package-card group">
+                              <div class="card-img">
+                                <div
+                                  class="bg-[url('./../img/products/packages/the-pastel-pattern-mix.webp')] bg-cover-center card-img-hover"
+                                ></div>              
+                              </div>
+                              <div class="column gap-0.5 grow">
+                                <div class="column gap-2 p-4 grow">
+                                    <h3 class="group-hover:text-fg">the pastel pattern mix</h3>
+                                    <p>Eclectic decorative candles in wavy, arched, and bubble shapes.</p>
+                                    <p class="item-p">includes:</p>
+                                    <ul class="space-y-2">
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>ribbed u-shaped with pink and dalmatian patterns.</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>two tall, squiggly candles with heart and floral prints.</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>A purple, geometric sculptural column candle.</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>Two small, rounded white and yellow organic shapes.</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>A multi-colored pastel cube of wax spheres.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="column gap-5 p-4 w-full border-t border-fg/50">
+                                    <div class="column gap-2">
+                                      <div class="row-start gap-2">
+                                        <span class="text-[18px]">$89.99</span>
+                                        <span class="line-through">$105</span>
+                                      </div>
+                                      <span class="text-success-bg">Save $15.01</span>
+                                    </div>
+                                    <button class="button-primary center gap-1 w-full">
+                                        <img src="./assets/img/icons/ui-icons/cart-black.svg" class="w-5" />
+                                        add to cart
+                                    </button>
+                                </div>
+                              </div>
+                              <div class="group-hover:hidden badge center">
+                                <p class="text-primary">Gift Ready</p>
+                              </div>
+                              <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                                <span class="icon-hover-bg-bg"></span>
+                                <a class="icon-hover-content">
+                                  <img
+                                    src="./assets/img/icons/ui-icons/heart-black.svg"
+                                    alt="favarites icon"
+                                  />
+                                </a>
+                              </div>
+                            </div>
+                            <div class="package-card group">
+                              <div class="card-img">
+                                <div
+                                  class="bg-[url('./../img/products/packages/candies-set.webp')] bg-cover-center card-img-hover"
+                                ></div>              
+                              </div>
+                              <div class="column gap-0.5 grow">
+                                <div class="column gap-2 p-4 grow">
+                                    <h3 class="group-hover:text-fg">candies set</h3>
+                                    <p>Segmented wax melt bars in fresh and fruity scents.</p>
+                                    <p class="item-p">includes:</p>
+                                    <ul class="space-y-2">
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>Mango scented candle mold.</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>Powder scented candle mold.</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>Apple scented candle mold.</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>Cherry scented candle mold.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="column gap-5 p-4 w-full border-t border-fg/50">
+                                    <div class="column gap-2">
+                                      <div class="row-start gap-2">
+                                        <span class="text-[18px]">$84.99</span>
+                                        <span class="line-through">$102</span>
+                                      </div>
+                                      <span class="text-success-bg">Save $17.01</span>
+                                    </div>
+                                    <button class="button-primary center gap-1 w-full">
+                                        <img src="./assets/img/icons/ui-icons/cart-black.svg" class="w-5" />
+                                        add to cart
+                                    </button>
+                                </div>
+                              </div>
+                              <div class="group-hover:hidden badge center">
+                                <p class="text-primary">Best Seller</p>
+                              </div>
+                              <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                                <span class="icon-hover-bg-bg"></span>
+                                <a class="icon-hover-content">
+                                  <img
+                                    src="./assets/img/icons/ui-icons/heart-black.svg"
+                                    alt="favarites icon"
+                                  />
+                                </a>
+                              </div>
+                            </div>
+                            <div class="package-card group">
+                              <div class="card-img">
+                                <div
+                                  class="bg-[url('./../img/products/packages/rosy-memories.webp')] bg-cover-center card-img-hover"
+                                ></div>              
+                              </div>
+                              <div class="column gap-0.5 grow">
+                                <div class="column gap-2 p-4 grow">
+                                    <h3 class="group-hover:text-fg">rosy memories</h3>
+                                    <p>Individual pink wax roses wrapped in rustic burlap for gifts.</p>
+                                    <p class="item-p">includes:</p>
+                                    <ul class="space-y-2">
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>Ten of small, baby pink molded rose candles.</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>Coarse brown fabric cones cradling each rose flower.</span>
+                                        </li>
+                                        <li class="flex justify-start items-start gap-1">
+                                            <img src="./assets/img/icons/ui-icons/check-pink.svg" alt="check icon" class="w-4" />
+                                            <span>Baby's breath tucked into the burlap.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="column gap-5 p-4 w-full border-t border-fg/50">
+                                    <div class="column gap-2">
+                                      <div class="row-start gap-2">
+                                        <span class="text-[18px]">$9.99</span>
+                                        <span class="line-through">$20</span>
+                                      </div>
+                                      <span class="text-success-bg">Save $10.01</span>
+                                    </div>
+                                    <button class="button-primary center gap-1 w-full">
+                                        <img src="./assets/img/icons/ui-icons/cart-black.svg" class="w-5" />
+                                        add to cart
+                                    </button>
+                                </div>
+                              </div>
+                              <div class="group-hover:hidden badge center">
+                                <p class="text-primary">Gift Ready</p>
+                              </div>
+                              <div class="hidden group-hover:block favarite-icon-absolute w-5">
+                                <span class="icon-hover-bg-bg"></span>
+                                <a class="icon-hover-content">
+                                  <img
+                                    src="./assets/img/icons/ui-icons/heart-black.svg"
+                                    alt="favarites icon"
+                                  />
+                                </a>
+                              </div>
+                            </div>                    
+                        </div>
+                    </div>
+                    <div class="pagenation row-start gap-7 center w-full">
+                      <div class="cursor-pointer">
+                        <img src="./assets/img/icons/ui-icons/angle-left.svg" alt="pagination left angle"/>
+                      </div>
+                      <div class="row-between gap-9">
+                        <label class="relative cursor-pointer">
+                          <input type="radio" name="items" class="hidden peer" checked />
+                          <span class="pagination-bg peer-checked:scale-100"></span>
+                          <p class="icon-hover-content peer-checked:text-accent">1</p>
+                        </label>
+                        <label class="relative cursor-pointer">
+                          <input type="radio" name="items" class="hidden peer" />
+                          <span class="pagination-bg peer-checked:scale-100"></span>
+                          <p class="icon-hover-content peer-checked:text-accent">2</p>
+                        </label>
+                        <label class="relative cursor-pointer">
+                          <input type="radio" name="items" class="hidden peer" />
+                          <span class="pagination-bg peer-checked:scale-100"></span>
+                          <p class="icon-hover-content peer-checked:text-accent">3</p>
+                        </label>
+                        <label class="relative cursor-pointer">
+                          <input type="radio" name="items" class="hidden peer" />
+                          <span class="pagination-bg peer-checked:scale-100"></span>
+                          <p class="icon-hover-content peer-checked:text-accent">4</p>
+                        </label>
+                      </div>
+                      <div class="cursor-pointer">
+                        <img src="./assets/img/icons/ui-icons/angle-right.svg" alt="pagination right angle"/>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+  </body>
 </html>

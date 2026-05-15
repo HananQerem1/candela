@@ -108,9 +108,12 @@
     .button-primary{
         background: var(--gradient-button);
         @apply rounded-full py-3 transition hover:opacity-90;
-        @apply px-7.5 md:px-12.5 lg:px-20 xl:px-25 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px];
+        @apply text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px];
     }
     .card-img{
+        @apply relative rounded-xl h-65 overflow-hidden;
+    }
+    .card-img-clickable{
         @apply relative rounded-xl h-65 overflow-hidden cursor-pointer;
     }
     .card-img-hover{
@@ -169,5 +172,8 @@
     }
     .panel-fg-bg{
         @apply bg-bg scale-100 rounded-full px-3 py-1;
+    }
+    .package-card{
+        @apply relative border border-fg/50 rounded-2xl flex flex-col;
     }
 }

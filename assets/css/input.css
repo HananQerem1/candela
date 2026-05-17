@@ -47,7 +47,7 @@
     }
     h2{
         @apply font-[Cormorant] capitalize font-semibold;
-        @apply text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px];
+        @apply text-[20px] sm:text-[23px] md:text-[25px] lg:text-[27px] xl:text-[30px];
 
     }
     h3{
@@ -167,6 +167,7 @@
     }
     .button-secondary{
         @apply bg-fg rounded-2xl transition hover:opacity-90;
+        @apply text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px];
     }
     .panel{
         @apply bg-bg-secondary rounded-2xl border border-fg/25 p-5;

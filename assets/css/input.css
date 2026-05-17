@@ -52,7 +52,7 @@
     }
     h3{
         @apply font-[Cormorant] capitalize text-left font-semibold;
-        @apply text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px];
+        @apply text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px];
     }
     p{
         @apply font-[Inter] text-secondary;
@@ -117,7 +117,7 @@
     .button-primary{
         background: var(--gradient-button);
         @apply rounded-full py-3 transition hover:opacity-90;
-        @apply text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px];
+        @apply text-[12px] sm:text-[13px] md:text-[14px];
     }
     .card-img{
         @apply relative rounded-xl h-65 overflow-hidden;
@@ -167,7 +167,7 @@
     }
     .button-secondary{
         @apply bg-fg rounded-2xl transition hover:opacity-90;
-        @apply text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px];
+        @apply text-[12px] sm:text-[13px] md:text-[14px];
     }
     .panel{
         @apply bg-bg-secondary rounded-2xl border border-fg/25 p-5;

@@ -14,6 +14,7 @@
     --font-weight-semibold: 600;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
+    --radius-4xl: 2rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -234,12 +235,24 @@
   .inline-block {
     display: inline-block;
   }
+  .table {
+    display: table;
+  }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
   .size-4 {
     width: calc(var(--spacing) * 4);
     height: calc(var(--spacing) * 4);
   }
+  .h-15 {
+    height: calc(var(--spacing) * 15);
+  }
   .h-48 {
     height: calc(var(--spacing) * 48);
+  }
+  .h-full {
+    height: 100%;
   }
   .h-screen {
     height: 100vh;
@@ -265,6 +278,9 @@
   .w-15 {
     width: calc(var(--spacing) * 15);
   }
+  .w-17 {
+    width: calc(var(--spacing) * 17);
+  }
   .w-\[50\%\] {
     width: 50%;
   }
@@ -280,14 +296,23 @@
   .w-full {
     width: 100%;
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
   .grow {
     flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .resize-none {
     resize: none;
@@ -304,6 +329,9 @@
   .grid-rows-3 {
     grid-template-rows: repeat(3, minmax(0, 1fr));
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
@@ -313,8 +341,14 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .justify-start {
     justify-content: flex-start;
+  }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
   }
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
@@ -358,6 +392,9 @@
   .gap-15 {
     gap: calc(var(--spacing) * 15);
   }
+  .gap-22 {
+    gap: calc(var(--spacing) * 22);
+  }
   .gap-22\.5 {
     gap: calc(var(--spacing) * 22.5);
   }
@@ -385,6 +422,9 @@
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
+  }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -427,6 +467,9 @@
   }
   .bg-bg-secondary {
     background-color: var(--color-bg-secondary);
+  }
+  .bg-fg {
+    background-color: var(--color-fg);
   }
   .bg-fg-secondary {
     background-color: var(--color-fg-secondary);
@@ -518,6 +561,9 @@
   .bg-\[url\(\'\.\/\.\.\/img\/products\/packages\/tulip-set\.webp\'\)\] {
     background-image: url('./../img/products/packages/tulip-set.webp');
   }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
+  }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
   }
@@ -598,6 +644,13 @@
   }
   .line-through {
     text-decoration-line: line-through;
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .group-hover\:block {
     &:is(:where(.group):hover *) {
@@ -859,6 +912,11 @@
       padding-inline: calc(var(--spacing) * 25);
     }
   }
+  .xl\:h-25 {
+    @media (width >= 80rem) {
+      height: calc(var(--spacing) * 25);
+    }
+  }
   .xl\:w-13 {
     @media (width >= 80rem) {
       width: calc(var(--spacing) * 13);
@@ -882,6 +940,11 @@
   .xl\:gap-10 {
     @media (width >= 80rem) {
       gap: calc(var(--spacing) * 10);
+    }
+  }
+  .xl\:p-6 {
+    @media (width >= 80rem) {
+      padding: calc(var(--spacing) * 6);
     }
   }
   .xl\:p-7 {
@@ -1438,6 +1501,11 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-scale-x {
   syntax: "*";
   inherits: false;
@@ -1460,11 +1528,6 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-translate-x {
   syntax: "*";
@@ -1491,12 +1554,12 @@
       --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
       --tw-border-style: solid;
+      --tw-outline-style: solid;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
       --tw-duration: initial;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;

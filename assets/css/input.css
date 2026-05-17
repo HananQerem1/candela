@@ -52,7 +52,7 @@
     }
     h3{
         @apply font-[Cormorant] capitalize text-left font-semibold;
-        @apply text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px];
+        @apply text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px];
     }
     p{
         @apply font-[Inter] text-secondary;
@@ -63,6 +63,9 @@
     }
     span{
         @apply text-[13px] capitalize;
+    }
+    label{
+        @apply text-[11px] sm:text-[11px] md:text-[12px];
     }
 }
 @layer utilities{
@@ -89,6 +92,12 @@
     }
     .filter-group{
         @apply flex flex-wrap gap-2 md:gap-3;
+    }
+    .placeholder-full-des{
+        @apply bg-bg text-[12px] text-gray-400 rounded-2xl p-2 outline-0 focus:border border-fg/50 w-full;
+    }
+    .placeholder-des{
+        @apply text-gray-400 text-[14px] focus:outline-none w-full;
     }
 }
 @layer components{

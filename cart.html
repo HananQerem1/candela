@@ -1,74 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Review your selected Candela candles, update quantities, and proceed to checkout. Complete your order and enjoy a warm, elegant experience.">
-    <link rel="stylesheet" href="./assets/css/output.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Review your selected Candela candles, update quantities, and proceed to checkout. Complete your order and enjoy a warm, elegant experience."
+    />
+    <link rel="stylesheet" href="./assets/css/output.css" />
     <title>Cart</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="py-4 position: fixed w-full z-2 bg-bg border-b border-fg">
-        <div class="container row-between">
-            <div class="logo max-md:w-20">
-                <a href="./index.html"><img src="./assets/img/icons/logo/logo.svg" alt="candela logo"/></a>
-            </div>
-            <nav class="links hidden md:block">
-                <ul class="row-between gap-8">
-                    <li><a class="max-lg:text-[14.5px] link-hover" href="./index.html">home</a></li>
-                    <li><a class="max-lg:text-[14.5px] link-hover" href="./shop.html">shop</a></li>
-                    <li><a class="max-lg:text-[14.5px] link-hover" href="./packages.html">packages</a></li>
-                    <li><a class="max-lg:text-[14.5px] link-hover" href="./contact.html">contact</a></li>
-                </ul>
-            </nav>
-            <nav class="icons hidden md:block">
-                <ul class="row-between gap-4">
-                    <li class="icon-hover group w-5">
-                        <span class="icon-hover-bg-fg"></span>
-                        <a class="icon-hover-content" href="./wishlist.html">
-                            <img src="./assets/img/icons/ui-icons/heart-black.svg" alt="favarites icon" class="group-hover:hidden"/>
-                            <img src="./assets/img/icons/ui-icons/heart-white.svg" alt="favarites icon" class="hidden group-hover:block"/>
-                        </a>
-                    </li>
-                    <li class="icon-hover group w-5">
-                        <span class="icon-hover-bg-fg"></span>
-                        <a class="icon-hover-content" href="./cart.html">
-                            <img src="./assets/img/icons/ui-icons/cart-black.svg" alt="cart icon" class="group-hover:hidden"/>
-                            <img src="./assets/img/icons/ui-icons/cart-white.svg" alt="cart icon" class="hidden group-hover:block"/>
-                        </a>
-                    </li>
-                    <li class="icon-hover group w-5">
-                        <span class="icon-hover-bg-fg"></span>
-                        <a class="icon-hover-content" href="./account.html">
-                            <img src="./assets/img/icons/ui-icons/user-black.svg" alt="user icon" class="group-hover:hidden"/>
-                            <img src="./assets/img/icons/ui-icons/user-white.svg" alt="user icon" class="hidden group-hover:block"/>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="icon-hover group w-5 md:hidden">
-                <span class="icon-hover-bg-fg"></span>
-                <img class="icon-hover-content" src="./assets/img/icons/ui-icons/bars.svg" alt="bars icon" />
-            </button>
+      <div class="container row-between">
+        <div class="logo max-md:w-20">
+          <a href="./index.html"
+            ><img src="./assets/img/icons/logo/logo.svg" alt="candela logo"
+          /></a>
         </div>
+        <nav class="links hidden md:block">
+          <ul class="row-between gap-8">
+            <li>
+              <a class="max-lg:text-[14.5px] link-hover" href="./index.html"
+                >home</a
+              >
+            </li>
+            <li>
+              <a class="max-lg:text-[14.5px] link-hover" href="./shop.html"
+                >shop</a
+              >
+            </li>
+            <li>
+              <a class="max-lg:text-[14.5px] link-hover" href="./packages.html"
+                >packages</a
+              >
+            </li>
+            <li>
+              <a class="max-lg:text-[14.5px] link-hover" href="./contact.html"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav class="icons hidden md:block">
+          <ul class="row-between gap-4">
+            <li class="icon-hover group w-5">
+              <span class="icon-hover-bg-fg"></span>
+              <a class="icon-hover-content" href="./wishlist.html">
+                <img
+                  src="./assets/img/icons/ui-icons/heart-black.svg"
+                  alt="favarites icon"
+                  class="group-hover:hidden"
+                />
+                <img
+                  src="./assets/img/icons/ui-icons/heart-white.svg"
+                  alt="favarites icon"
+                  class="hidden group-hover:block"
+                />
+              </a>
+            </li>
+            <li class="icon-hover group w-5">
+              <span class="icon-hover-bg-fg"></span>
+              <a class="icon-hover-content" href="./cart.html">
+                <img
+                  src="./assets/img/icons/ui-icons/cart-black.svg"
+                  alt="cart icon"
+                  class="group-hover:hidden"
+                />
+                <img
+                  src="./assets/img/icons/ui-icons/cart-white.svg"
+                  alt="cart icon"
+                  class="hidden group-hover:block"
+                />
+              </a>
+            </li>
+            <li class="icon-hover group w-5">
+              <span class="icon-hover-bg-fg"></span>
+              <a class="icon-hover-content" href="./account.html">
+                <img
+                  src="./assets/img/icons/ui-icons/user-black.svg"
+                  alt="user icon"
+                  class="group-hover:hidden"
+                />
+                <img
+                  src="./assets/img/icons/ui-icons/user-white.svg"
+                  alt="user icon"
+                  class="hidden group-hover:block"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="icon-hover group w-5 md:hidden">
+          <span class="icon-hover-bg-fg"></span>
+          <img
+            class="icon-hover-content"
+            src="./assets/img/icons/ui-icons/bars.svg"
+            alt="bars icon"
+          />
+        </button>
+      </div>
     </header>
     <main>
-        <section class="wishlist-empty-state column-center gap-4 w pt-30 sm:pt-35">
-            <div class="column-center gap-5 w-[75%]">
-                <div class="w-15 lg:w-20 xl:w-25 p-4 lg:p-5.5 xl:p-7 bg-bg-secondary rounded-full">
+      <section class="cart-empty-state column-center gap-4 w pt-30 sm:pt-35"
+      >
+        <div class="column-center gap-5 w-[75%]">
+          <div
+            class="w-15 lg:w-20 xl:w-25 p-4 lg:p-5.5 xl:p-7 bg-bg-secondary rounded-full"
+          >
+            <img
+              src="./assets/img/icons/ui-icons/cart-black.svg"
+              alt="cart icon"
+            />
+          </div>
+          <h2>your cart is empty</h2>
+          <p>
+            Start adding your items to fill your cart and bring warmth to your
+            space.
+          </p>
+          <a
+            href="./shop.html"
+            class="button-primary center gap-1 w-[60%] sm:w-[45%] md:w-[35%] xl:w-[25%]"
+          >
+            <img src="./assets/img/icons/ui-icons/sparkle.svg" class="w-5" />
+            discover candles
+          </a>
+        </div>
+      </section>
+      <section class="cart pt-30 sm:pt-35">
+        <div class="container column gap-10">
+          <div class="heading column gap-1">
+            <div class="heading row-start gap-1">
+                <div class="w-8 p-1.5 md:w-10 md:p-2 bg-fg rounded-full">
                     <img 
-                      src="./assets/img/icons/ui-icons/cart-black.svg" 
-                      alt="cart icon"
+                    src="./assets/img/icons/ui-icons/cart-white-fill.svg" 
+                    alt="white cart icon"
                     />
                 </div>
-                <h2>your cart is empty</h2>
-                <p>Start adding your items to fill your cart and bring warmth to your space.</p>
-                <a href="./shop.html" class="button-primary center gap-1 w-[60%] sm:w-[45%] md:w-[35%] xl:w-[25%]">
-                    <img src="./assets/img/icons/ui-icons/sparkle.svg" class="w-5" />
-                    discover candles
-                </a>
+                <h2>shopping cart</h2>
             </div>
-        </section>
+            <p>2 items in your cart</p>
+          </div>
+          <div class="cart-detils grid grid-cols-4 gap-4 w-full">
+            <div class="cart-items col-span-4 md:col-span-2 lg:col-span-3 column gap-3">
+              <div class="item flex items-start gap-4 relative border border-fg/50 rounded-2xl w-full p-3">
+                <div class="item-img w-[45%] xs:w-[30%] sm:w-[25%] md:w-[40%] lg:w-[15%]">
+                  <img
+                    src="./assets/img/products/items/scented/lavender-dreams.webp"
+                    alt="lavender dreams img"
+                    class="bg-cover-center rounded-xl"
+                  />
+                </div>
+                <div class="item-details column gap-2 w-full">
+                  <h3>lavender dreams</h3>
+                  <p>Medium (8 oz)</p>
+                  <div class="row-between w-full">
+                    <div class="row-between gap-6 px-3 xs:px-5 py-1 rounded-2xl border border-fg/50 ">
+                      <button>
+                        <img
+                          src="./assets/img/icons/ui-icons/minus.svg"
+                          alt="minus icon"
+                          class="w-4"
+                        />
+                      </button>
+                      <span>2</span>
+                      <button>
+                        <img
+                          src="./assets/img/icons/ui-icons/plus.svg"
+                          alt="plus icon"
+                          class="w-4"
+                        />
+                      </button>
+                    </div>
+                    <span class="font-semibold">$64.00</span>
+                  </div>
+                </div>
+                <div class="absolute top-3 right-3">
+                    <button>                    
+                        <img src="./assets/img/icons/ui-icons/cancel.svg" alt="cancel icon" />
+                    </button>
+                </div>
+              </div>
+            </div>
+            <div class="cart-summary col-span-4 md:col-span-2 lg:col-span-1 column gap-4 p-5 bg-bg-secondary rounded-2xl">
+                <div class="column gap-4 w-full pb-5 border-b border-fg/50">
+                    <h3>order summary</h3>
+                    <div class="column gap-3 w-full">
+                        <div class="row-between w-full">
+                            <p>Subtotal</p>
+                            <span>$92.00</span>
+                        </div>
+                        <div class="row-between w-full">                        <p>Shipping</p>
+                            <span>free</span>
+                        </div>
+                        <div class="row-between w-full">                        <p>Discount</p>
+                            <span>$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column gap-4 w-full">
+                    <div class="row-between w-full">
+                        <h3>total</h3>
+                        <span class="font-semibold">$92.00</span>
+                    </div>
+                    <div class=" flex justify-between items-end gap-1 w-full">
+                        <div class="column gap-1 grow">
+                            <label for="discount-code" class="cursor-pointer">Promo Code</label>
+                            <div class="panel-bg-bg row-start gap-1 focus-within:border-fg w-full">
+                                <label class="w-4 sm:w-5 cursor-pointer" for="discount-code">
+                                    <img src="./assets/img/icons/ui-icons/tag.svg" alt="tag icon"/>
+                                </label>
+                                <input type="text" id="discount-code" name="discount-code" placeholder="Enter Code..." class="placeholder-des cursor-pointer" />
+                            </div>
+                        </div>
+                        <div class="panel-fg-bg">
+                            <button>apply</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="bg-bg-secondary py-10 md:py-18">
       <div class="container column-center gap-15">
@@ -81,7 +235,7 @@
               Handcrafted candles that bring warmth and elegance to your space.
             </p>
           </div>
-          <div class="column gap-4 ">
+          <div class="column gap-4">
             <h3>quick links</h3>
             <ul class="column footer-link">
               <li><a class="link-hover" href="./index.html">home</a></li>
@@ -192,5 +346,5 @@
         </div>
       </div>
     </footer>
-</body>
+  </body>
 </html>
